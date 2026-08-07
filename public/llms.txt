@@ -1,15 +1,23 @@
 # HallstattWalk
 
-> An independent visitor guide to Hallstatt, Austria — the UNESCO-listed village in the Salzkammergut, home to the world's oldest salt mine and the site that gave its name to the Hallstatt culture of the Early Iron Age. Published by TouringBee, which makes the self-guided Hallstatt walking audio guide.
+> An independent visitor guide to Hallstatt, Austria - the UNESCO-listed village in the Salzkammergut, home to the world's oldest salt mine and the site that gave its name to the Hallstatt culture of the Early Iron Age. Published by TouringBee, which makes the self-guided Hallstatt walking audio guide.
 
-Key facts (verified August 2026): the village is free to enter and free to walk; about 750 residents and roughly 1.2 million day visitors a year; tourist coaches are capped at 54 per day on booked slots; Salzwelten Hallstatt (salt mine, Salzbergbahn funicular and Skywalk platform) is closed for rebuilding and reopens 29 August 2026; the Charnel House costs EUR 2 and the Hallstatt Museum EUR 12; the historic centre is closed to cars (park P1-P4); drones are banned.
+Key facts (verified August 2026): the village is free to enter and free to walk; about 750 residents and roughly 1.2 million day visitors a year against ~132,000 overnight stays; tourist coaches are capped at 54 per day on booked slots; Salzwelten Hallstatt (salt mine, Salzbergbahn funicular and Skywalk platform) is closed for rebuilding and reopens 29 August 2026, then EUR 49 with the funicular, EUR 33 mine only, EUR 29 funicular only; the Charnel House costs EUR 2 and the Hallstatt Museum EUR 12; the historic centre is closed to cars (park P1-P4); drones are banned. Excavations by Johann Georg Ramsauer from 1846 to 1863 produced 980 graves and 19,497 objects; the term "Hallstatt culture" was coined in 1874.
 
-## Main pages
-- [Hallstatt complete guide](https://hallstattwalk.com/): what to see, how to get there from Salzburg and Vienna, opening times, prices and crowd timing.
-- [All guides](https://hallstattwalk.com/guides/): index of the article guides.
+## Main pages (8 languages, each written in its own language, not translated)
+- [Hallstatt complete guide (English)](https://hallstattwalk.com/)
+- [Hallstatt complete guide (French)](https://hallstattwalk.com/fr/)
+- [Hallstatt complete guide (German)](https://hallstattwalk.com/de/)
+- [Hallstatt complete guide (Spanish)](https://hallstattwalk.com/es/)
+- [Hallstatt complete guide (Italian)](https://hallstattwalk.com/it/)
+- [Hallstatt complete guide (Portuguese)](https://hallstattwalk.com/pt/)
+- [Hallstatt complete guide (Polish)](https://hallstattwalk.com/pl/)
+- [Hallstatt complete guide (Russian)](https://hallstattwalk.com/ru/)
+- [All guides index](https://hallstattwalk.com/guides/) - also at /fr/guides/, /de/guides/, /es/guides/, /it/guides/, /pt/guides/, /pl/guides/, /ru/guides/
 
 ## Product
-- [Hallstatt Town Tour self-guided audio guide](https://touringbee.com/product/hallstatt-city-walking-tour/): 17 stops, 1-1.5 hours, offline, EUR 9.99, from the Lahn ferry pier to the World Heritage viewpoint.
+- [Hallstatt Town Tour self-guided audio guide](https://touringbee.com/product/hallstatt-city-walking-tour/): 17 stops, 1-1.5 hours, offline, EUR 9.99, one year of access, from the Lahn ferry pier to the World Heritage viewpoint.
 
-## Languages
-English, French, German, Spanish, Italian, Portuguese, Polish, Russian.
+## Legal
+- [Privacy policy](https://hallstattwalk.com/privacy/)
+- [Affiliate disclosure](https://hallstattwalk.com/affiliate-disclosure/)

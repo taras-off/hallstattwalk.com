@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Все путеводители по Гальштату | TouringBee</title>
+<meta name="description" content="Все материалы HallstattWalk: дорога из Зальцбурга и Вены, соляная шахта, паром, костница, лучшее время для поездки и как разминуться с толпой.">
+<link rel="canonical" href="https://hallstattwalk.com/ru/guides/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="alternate" hreflang="en" href="https://hallstattwalk.com/guides/">
+<link rel="alternate" hreflang="fr" href="https://hallstattwalk.com/fr/guides/">
+<link rel="alternate" hreflang="de" href="https://hallstattwalk.com/de/guides/">
+<link rel="alternate" hreflang="es" href="https://hallstattwalk.com/es/guides/">
+<link rel="alternate" hreflang="it" href="https://hallstattwalk.com/it/guides/">
+<link rel="alternate" hreflang="pt" href="https://hallstattwalk.com/pt/guides/">
+<link rel="alternate" hreflang="pl" href="https://hallstattwalk.com/pl/guides/">
+<link rel="alternate" hreflang="ru" href="https://hallstattwalk.com/ru/guides/">
+<link rel="alternate" hreflang="x-default" href="https://hallstattwalk.com/guides/">
+<style>
+:root{
+  --navy:#0F3054; --navy-2:#16406E; --cream:#FEF3E0; --cream-2:#FBF7EF;
+  --blue:#1668C6; --blue-d:#0E4F9C; --ink:#17222E; --mut:#5A6874; --line:#E3E7EC;
+  --wrap:1120px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue-d)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.22;margin:0 0 .5em;letter-spacing:-.015em}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800}
+h2{font-size:clamp(24px,3.4vw,33px);font-weight:800;color:var(--navy)}
+h3{font-size:20px;font-weight:750}
+p{margin:0 0 1em}
+section{padding:56px 0}
+.lead{font-size:19px;color:#2B3846}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.6) blur(10px);border-bottom:1px solid var(--line)}
+.hdr .bar{display:flex;align-items:center;gap:16px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;letter-spacing:-.02em;font-size:19px}
+.brand img{width:38px;height:38px;border-radius:50%}
+.brand span i{font-style:normal;color:var(--blue)}
+.nav{margin-left:auto;display:flex;align-items:center;gap:14px}
+.menu{position:relative}
+.menu>summary{list-style:none;cursor:pointer;font-weight:650;color:var(--navy);padding:8px 10px;border-radius:9px}
+.menu>summary::-webkit-details-marker{display:none}
+.menu>summary:hover{background:var(--cream)}
+.menu ul{position:absolute;right:0;top:44px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 42px rgba(15,48,84,.14);list-style:none;margin:0;padding:8px;min-width:290px}
+.menu li a{display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:15px}
+.menu li a:hover{background:var(--cream)}
+.menu .all{font-weight:700;color:var(--blue-d);border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.lang{display:flex;flex-wrap:wrap;gap:2px}
+.lang a{font-size:12.5px;font-weight:700;color:var(--mut);text-decoration:none;padding:5px 6px;border-radius:6px}
+.lang a:hover{background:var(--cream);color:var(--navy)}
+.lang a.on{background:var(--navy);color:#fff}
+.hdr .cta{display:none}
+@media(min-width:900px){.hdr .cta{display:inline-flex}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:11px;font-weight:700;font-size:16px;text-decoration:none;background:var(--blue);color:#fff;border:2px solid var(--blue);transition:.15s;text-align:center}
+.btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn.dark{background:#fff;color:var(--navy);border-color:#fff}
+.btn.dark:hover{background:var(--cream);border-color:var(--cream)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.14)}
+.btn.outline{background:#fff;color:var(--blue-d);border-color:var(--blue)}
+.btn.outline:hover{background:var(--cream-2)}
+.btn.block{width:100%}
+.btn.sm{padding:9px 14px;font-size:14.5px;border-radius:9px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;padding:0;isolation:isolate}
+.hero .ph{position:absolute;inset:0;z-index:-2}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,25,44,.72),rgba(9,25,44,.62) 45%,rgba(9,25,44,.86))}
+.hero .inner{padding:74px 0 66px;max-width:790px}
+.chip{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:650;margin-bottom:18px}
+.hero p.sub{font-size:19px;color:#E7EDF5;max-width:640px}
+.hero .btns{display:flex;flex-wrap:wrap;gap:11px;margin-top:24px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14.5px;color:#D5E0EC}
+.hero .facts b{color:#fff}
+
+/* ---------- generic blocks ---------- */
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:1fr}
+.g3{grid-template-columns:1fr}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.soft{background:var(--cream-2)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.card h3{margin-top:0}
+.tiles{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:680px){.tiles{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.tile img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.tile .tx{padding:16px 18px 20px}
+.tile h3{font-size:18.5px;margin-bottom:6px}
+.tile p{font-size:15.5px;color:var(--mut);margin:0}
+
+/* product card */
+.product{background:linear-gradient(135deg,var(--navy),#1B4E82);color:#fff;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr}
+@media(min-width:860px){.product{grid-template-columns:1.05fr .95fr}}
+.product .px{padding:32px}
+.product h2{color:#fff;margin-bottom:.35em}
+.product ul{list-style:none;padding:0;margin:16px 0 22px}
+.product li{padding-left:28px;position:relative;margin-bottom:9px;color:#E4ECF5;font-size:16px}
+.product li::before{content:"✓";position:absolute;left:0;color:#8FD3A6;font-weight:800}
+.product .pimg img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.price{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
+.price b{font-size:34px;font-weight:800}
+.price span{color:#C9D8E8;font-size:15px}
+
+.steps{counter-reset:s}
+.step{position:relative;padding-left:56px;margin-bottom:22px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;width:38px;height:38px;border-radius:50%;background:var(--cream);color:var(--navy);font-weight:800;display:grid;place-items:center;border:1px solid #EADFC7}
+.step h3{margin-bottom:4px;font-size:18px}
+.step p{margin:0;color:var(--mut);font-size:15.5px}
+
+.info{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.info div{padding:16px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:2px}
+@media(min-width:620px){.info div{grid-template-columns:220px 1fr;gap:16px}}
+.info div:last-child{border-bottom:0}
+.info dt,.info b{color:var(--navy);font-weight:700;font-size:15.5px}
+.info span{font-size:15.5px;color:#2B3846}
+
+.notice{border-left:5px solid #D08A15;background:#FFF8EA;padding:18px 20px;border-radius:0 12px 12px 0;margin:24px 0}
+.notice b{color:#8A5A06}
+.ticketbox{background:var(--navy);color:#fff;border-radius:16px;padding:26px}
+.ticketbox h3{color:#fff;margin-top:0}
+.ticketbox p{color:#DCE6F1}
+
+.partners{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.partners{grid-template-columns:repeat(3,1fr)}}
+.partner{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.partner img{aspect-ratio:16/10;object-fit:cover}
+.partner .pb{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.plabel{text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;font-weight:800;color:var(--blue-d)}
+.partner h3{font-size:18px;margin:0}
+.partner .meta{font-size:14.8px;color:var(--mut);flex:1;margin:0}
+
+.faq details{border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;background:#fff}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:700;color:var(--navy);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--blue);font-weight:800}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 18px 16px;color:#2B3846;font-size:16px}
+
+.author{display:grid;gap:20px;align-items:center;grid-template-columns:1fr}
+@media(min-width:640px){.author{grid-template-columns:96px 1fr}}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;display:block}
+
+.final{background:linear-gradient(135deg,#0C2743,#1A4C80);color:#fff;border-radius:18px;padding:38px;text-align:center}
+.final h2{color:#fff}
+.final p{color:#D8E4F0;max-width:640px;margin:0 auto 22px}
+.final .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.disclosure{font-size:13.5px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px;margin-top:34px}
+
+footer{background:var(--navy);color:#C6D5E5;padding:48px 0 110px;font-size:15px}
+footer h4{color:#fff;font-size:15px;margin:0 0 12px;letter-spacing:.03em;text-transform:uppercase}
+footer a{color:#C6D5E5;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:8px}
+.fgrid{display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:760px){.fgrid{grid-template-columns:repeat(4,1fr)}}
+.fbot{border-top:1px solid rgba(255,255,255,.14);margin-top:32px;padding-top:20px;font-size:13.5px;color:#9FB4CA}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(15,48,84,.12);padding:10px 0;transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .in{display:flex;align-items:center;gap:14px}
+.sticky .t{font-size:14.5px;line-height:1.35}
+.sticky .t b{display:block;color:var(--navy);font-size:15.5px}
+.sticky .btn{margin-left:auto;white-space:nowrap}
+@media(max-width:520px){.sticky .t{display:none}.sticky .btn{margin:0;width:100%}}
+
+audio{width:100%;margin-top:8px}
+.small{font-size:14.5px;color:var(--mut)}
+.pill{display:inline-block;background:var(--cream);border:1px solid #EEE1C6;color:#7A5A16;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap bar">
+    <a class="brand" href="/ru/"><img src="/img/logo.webp" alt="HallstattWalk" width="38" height="38"><span>Hallstatt<i>Walk</i></span></a>
+    <nav class="nav">
+      <details class="menu">
+        <summary>Путеводители &#9662;</summary>
+        <ul>
+          <li><a href="/ru/guides/#hallstatt-from-salzburg">Из Зальцбурга в Гальштат <span class="pill">скоро</span></a></li>
+          <li><a href="/ru/guides/#hallstatt-from-vienna">Из Вены в Гальштат <span class="pill">скоро</span></a></li>
+          <li><a href="/ru/guides/#hallstatt-salt-mine">Соляная шахта <span class="pill">скоро</span></a></li>
+          <li><a href="/ru/guides/#best-time-to-visit-hallstatt">Когда ехать без толп <span class="pill">скоро</span></a></li>
+          <li><a href="/ru/guides/#hallstatt-ferry">Поезд и паром <span class="pill">скоро</span></a></li>
+          <li><a href="/ru/guides/#hallstatt-bone-house">Костница <span class="pill">скоро</span></a></li>
+          <li><a class="all" href="/ru/guides/">Все путеводители &rarr;</a></li>
+        </ul>
+      </details>
+      <a class="btn sm cta" href="https://touringbee.com/product/hallstatt-city-walking-tour/?wpam_id=TBD&amp;utm_source=hallstattwalk.com&amp;utm_medium=referral&amp;utm_campaign=landing&amp;utm_content=header" target="_blank" rel="noopener">Аудиогид 9,99&nbsp;&euro;</a>
+      <nav class="lang"><a href="/guides/">EN</a><a href="/fr/guides/">FR</a><a href="/de/guides/">DE</a><a href="/es/guides/">ES</a><a href="/it/guides/">IT</a><a href="/pt/guides/">PT</a><a href="/pl/guides/">PL</a><a class="on" href="/ru/guides/">RU</a></nav>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <p class="small"><a href="/ru/">Путеводитель по Гальштату</a> &rarr; Все путеводители</p>
+    <h1>Все путеводители по Гальштату</h1>
+    <p class="lead">Тридцать один путеводитель по Гальштату и Зальцкаммергуту выходит до конца осени 2026 года на восьми языках. Начните с полного путеводителя по Гальштату.</p>
+    <div class="tiles" style="margin-top:28px">
+      <article class="card" id="hallstatt-from-salzburg">
+        <span class="plabel">Зальцбург &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Как добраться из Зальцбурга в Гальштат: все способы</h3>
+        <p class="small" style="margin:0 0 12px">Поезд, машина, автобус или экскурсия: время, деньги и что подходит вашему дню.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="best-time-to-visit-hallstatt">
+        <span class="plabel">Гальштат: основное</span>
+        <h3 style="margin:6px 0 8px">Когда лучше ехать в Гальштат и как разминуться с толпой</h3>
+        <p class="small" style="margin:0 0 12px">Расписание толпы по часам и два окна, когда деревня снова тихая.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-salt-mine">
+        <span class="plabel">Достопримечательности</span>
+        <h3 style="margin:6px 0 8px">Соляная шахта Гальштата: билеты, время и открытие в 2026 году</h3>
+        <p class="small" style="margin:0 0 12px">Что меняет новый фуникулёр, что входит в экскурсию и стоит ли она 49 &euro;.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-from-vienna">
+        <span class="plabel">Вена &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Из Вены в Гальштат: поезд, машина или экскурсия?</h3>
+        <p class="small" style="margin:0 0 12px">Три способа пересечь Австрию за один день — честное сравнение.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-ferry">
+        <span class="plabel">Транспорт</span>
+        <h3 style="margin:6px 0 8px">Паром в Гальштате: как устроена переправа</h3>
+        <p class="small" style="margin:0 0 12px">Почему станция на другом берегу и как переправа ложится в расписание.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-bone-house">
+        <span class="plabel">Культура</span>
+        <h3 style="margin:6px 0 8px">Костница в Гальштате: что знать заранее</h3>
+        <p class="small" style="margin:0 0 12px">1200 черепов, 610 расписных: цены, часы и что вы там видите.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="what-to-see-in-hallstatt">
+        <span class="plabel">Гальштат: основное</span>
+        <h3 style="margin:6px 0 8px">Что посмотреть в Гальштате: гид для первой поездки</h3>
+        <p class="small" style="margin:0 0 12px">Короткий список для деревни, которую можно пройти насквозь за пятнадцать минут.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="things-to-do-in-hallstatt">
+        <span class="plabel">Гальштат: основное</span>
+        <h3 style="margin:6px 0 8px">Чем заняться в Гальштате: что действительно стоит времени</h3>
+        <p class="small" style="margin:0 0 12px">Отсортировано по тому, оправдывает ли себя за пару часов.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="one-day-in-hallstatt">
+        <span class="plabel">Гальштат: основное</span>
+        <h3 style="margin:6px 0 8px">Один день в Гальштате: реалистичный маршрут</h3>
+        <p class="small" style="margin:0 0 12px">План, который считается с расписанием автобусов, а не спорит с ним.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="is-hallstatt-worth-visiting">
+        <span class="plabel">Гальштат: основное</span>
+        <h3 style="margin:6px 0 8px">Стоит ли ехать в Гальштат: честный разбор</h3>
+        <p class="small" style="margin:0 0 12px">Аргументы за и против и условия, которые решают дело.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-self-guided-walking-tour">
+        <span class="plabel">Пешком</span>
+        <h3 style="margin:6px 0 8px">Пешая прогулка по Гальштату без гида</h3>
+        <p class="small" style="margin:0 0 12px">Как обойти деревню самостоятельно и что даёт аудиомаршрут.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-day-trip">
+        <span class="plabel">Гальштат: основное</span>
+        <h3 style="margin:6px 0 8px">Гальштат за день: как выжать максимум из короткой поездки</h3>
+        <p class="small" style="margin:0 0 12px">Что успеть за три часа на месте.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-day-trip-from-salzburg">
+        <span class="plabel">Зальцбург &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Гальштат из Зальцбурга самостоятельно: маршрут от двери до двери</h3>
+        <p class="small" style="margin:0 0 12px">Без автобусной группы и без нервов.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="salzburg-or-hallstatt">
+        <span class="plabel">Зальцбург &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Зальцбург или Гальштат: куда ехать, если день один</h3>
+        <p class="small" style="margin:0 0 12px">Два совершенно разных дня, сравниваем без рекламы.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="salzburg-hallstatt-itinerary">
+        <span class="plabel">Зальцбург &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Три дня в Зальцбурге и Гальштате: готовый план</h3>
+        <p class="small" style="margin:0 0 12px">Короткий маршрут по Австрии, который работает без машины.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="day-trips-from-salzburg">
+        <span class="plabel">Зальцбург &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Куда съездить из Зальцбурга: Гальштат и не только</h3>
+        <p class="small" style="margin:0 0 12px">Что ещё в Зальцкаммергуте стоит вашего дня.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-in-winter">
+        <span class="plabel">Сезоны</span>
+        <h3 style="margin:6px 0 8px">Гальштат зимой: стоит ли ехать</h3>
+        <p class="small" style="margin:0 0 12px">Снег, тень от гор и тихие месяцы — что вы выигрываете и что теряете.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-at-christmas">
+        <span class="plabel">Сезоны</span>
+        <h3 style="margin:6px 0 8px">Рождество в Гальштате: чего ждать</h3>
+        <p class="small" style="margin:0 0 12px">Огни, Крампус и деревня в момент максимальной съёмки.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-christmas-market">
+        <span class="plabel">Сезоны</span>
+        <h3 style="margin:6px 0 8px">Рождественский рынок в Гальштате: ехать ли ради него</h3>
+        <p class="small" style="margin:0 0 12px">Маленький, короткий и конкретный — вот когда он действительно работает.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-skywalk">
+        <span class="plabel">Достопримечательности</span>
+        <h3 style="margin:6px 0 8px">Скайуок в Гальштате: вид, билеты и лучшее время</h3>
+        <p class="small" style="margin:0 0 12px">Смотровая площадка Всемирного наследия и как на неё подняться.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-boat-ride">
+        <span class="plabel">Озеро</span>
+        <h3 style="margin:6px 0 8px">Прогулка на кораблике по озеру Гальштат: стоит ли</h3>
+        <p class="small" style="margin:0 0 12px">Паромы, кораблики и старые деревянные плетте.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="lake-hallstatt">
+        <span class="plabel">Озеро</span>
+        <h3 style="margin:6px 0 8px">Озеро Гальштат: виды, лодки, купание и точки для фото</h3>
+        <p class="small" style="margin:0 0 12px">Вода, вокруг которой построена вся деревня.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-painted-skulls">
+        <span class="plabel">Культура</span>
+        <h3 style="margin:6px 0 8px">Почему в Гальштате расписывали черепа</h3>
+        <p class="small" style="margin:0 0 12px">Обычай, который начался с нехватки земли на кладбище.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-history">
+        <span class="plabel">История</span>
+        <h3 style="margin:6px 0 8px">История Гальштата: от соляных копей до списка ЮНЕСКО</h3>
+        <p class="small" style="margin:0 0 12px">Семь тысяч лет в том порядке, в каком они случились.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-culture">
+        <span class="plabel">История</span>
+        <h3 style="margin:6px 0 8px">Что такое гальштатская культура: коротко для путешественника</h3>
+        <p class="small" style="margin:0 0 12px">Как деревня на 750 человек дала имя целой эпохе.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="why-hallstatt-is-famous">
+        <span class="plabel">Главное</span>
+        <h3 style="margin:6px 0 8px">Чем на самом деле знаменит Гальштат</h3>
+        <p class="small" style="margin:0 0 12px">Соль, археология, китайская копия и ледяная королева.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-food">
+        <span class="plabel">Еда</span>
+        <h3 style="margin:6px 0 8px">Что попробовать в Гальштате и Зальцкаммергуте</h3>
+        <p class="small" style="margin:0 0 12px">Озёрная рыба, кайзершмаррн и места, где едят местные.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-viewpoints">
+        <span class="plabel">Фотография</span>
+        <h3 style="margin:6px 0 8px">Лучшие смотровые точки и места для фото в Гальштате</h3>
+        <p class="small" style="margin:0 0 12px">Где снимают открытку и где кадры лучше, а очереди нет.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-hikes">
+        <span class="plabel">Активный отдых</span>
+        <h3 style="margin:6px 0 8px">Куда пойти пешком вокруг Гальштата в первый приезд</h3>
+        <p class="small" style="margin:0 0 12px">От тропы вдоль рассолопровода до водопада в Эхернтале.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-frozen">
+        <span class="plabel">Культура</span>
+        <h3 style="margin:6px 0 8px">Гальштат и «Холодное сердце»: откуда взялась легенда</h3>
+        <p class="small" style="margin:0 0 12px">Что художники Disney изучали на самом деле.</p>
+        <span class="pill">скоро</span>
+      </article>
+      <article class="card" id="hallstatt-or-salzburg">
+        <span class="plabel">Зальцбург &harr; Гальштат</span>
+        <h3 style="margin:6px 0 8px">Гальштат или Зальцбург на один день: как выбрать</h3>
+        <p class="small" style="margin:0 0 12px">Короткая схема выбора для одного свободного дня.</p>
+        <span class="pill">скоро</span>
+      </article>
+    </div>
+    <p class="disclosure">Материалы выходят по мере того, как мы их собираем и сверяем с официальными источниками. Цены и часы работы проверяем перед публикацией.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/ru/" style="color:#fff"><img src="/img/logo.webp" alt="" width="38" height="38" loading="lazy"><span>Hallstatt<i style="color:#7FB6F2">Walk</i></span></a>
+        <p style="margin-top:12px;font-size:14.5px">Независимый путеводитель по Гальштату и Зальцкаммергуту от команды аудиогидов TouringBee.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="/ru/">Полный путеводитель по Гальштату</a></li>
+          <li><a href="/ru/guides/">Все путеводители</a></li>
+          <li><a href="https://touringbee.com/product/hallstatt-city-walking-tour/?wpam_id=TBD&amp;utm_source=hallstattwalk.com&amp;utm_medium=referral&amp;utm_campaign=landing&amp;utm_content=footer" target="_blank" rel="noopener">Аудиогид по Гальштату</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Документы</h4>
+        <ul>
+          <li><a href="/privacy/">Политика конфиденциальности</a></li>
+          <li><a href="/affiliate-disclosure/">О партнёрских ссылках</a></li>
+          <li><a href="https://touringbee.com/terms-and-conditions/" target="_blank" rel="noopener">Условия TouringBee</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Языки</h4>
+        <ul>
+          <li><a href="/">English</a> &middot; <a href="/fr/">Fran&ccedil;ais</a></li>
+          <li><a href="/de/">Deutsch</a> &middot; <a href="/es/">Espa&ntilde;ol</a></li>
+          <li><a href="/it/">Italiano</a> &middot; <a href="/pt/">Portugu&ecirc;s</a></li>
+          <li><a href="/pl/">Polski</a> &middot; <a href="/ru/">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">&copy; 2026 HallstattWalk — проект TouringBee. Гальштат-Дахштайн / Зальцкаммергут — культурный ландшафт из списка Всемирного наследия ЮНЕСКО. Помните: деревня остаётся чьим-то домом.</div>
+  </div>
+</footer>
+</body>
+</html>
