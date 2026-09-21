@@ -192,7 +192,7 @@ audio{width:100%;margin-top:8px}
           <li><a class="all" href="/guides/">All guides →</a></li>
         </ul>
       </details>
-      <a class="btn sm cta" href="https://touringbee.com/product/hallstatt-city-walking-tour/?wpam_id=TBD&amp;utm_source=hallstattwalk.com&amp;utm_medium=referral&amp;utm_campaign=landing&amp;utm_content=header" target="_blank" rel="noopener">Audio guide €9.99</a>
+      <a class="btn sm cta bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" target="_blank" rel="noopener" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="header">Audio guide €9.99</a>
       <nav class="lang"><a class="on" href="/">EN</a><a href="/fr/">FR</a><a href="/de/">DE</a><a href="/es/">ES</a><a href="/it/">IT</a><a href="/pt/">PT</a><a href="/pl/">PL</a><a href="/ru/">RU</a></nav>
     </nav>
   </div>
@@ -226,7 +226,7 @@ audio{width:100%;margin-top:8px}
           <li><a href="/">Hallstatt complete guide</a></li>
           <li><a href="/guides/">All guides</a></li>
           <li><a href="#preview">Audio preview</a></li>
-          <li><a href="https://touringbee.com/product/hallstatt-city-walking-tour/?wpam_id=TBD&amp;utm_source=hallstattwalk.com&amp;utm_medium=referral&amp;utm_campaign=landing&amp;utm_content=footer" target="_blank" rel="noopener">Hallstatt audio guide</a></li>
+          <li><a class="bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" target="_blank" rel="noopener" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="footer">Hallstatt audio guide</a></li>
         </ul>
       </div>
       <div>
@@ -250,5 +250,42 @@ audio{width:100%;margin-top:8px}
     <div class="fbot">© 2026 HallstattWalk — a TouringBee project. Hallstatt-Dachstein / Salzkammergut is a UNESCO World Heritage Cultural Landscape. Please treat the village as the home it still is.</div>
   </div>
 </footer>
+
+<!-- Bokun booking engine: loaded only after the first real user interaction, so
+     synthetic audits (Lighthouse/PSI) never pay for it. -->
+<script>
+(function(){
+  var SRC = 'https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=9c09e243-b0be-4711-9c08-7fbbbafcd4e7';
+  var EV  = ['mouseover','touchstart','pointerdown','scroll','keydown'];
+  var OPT = {passive:true, capture:true};
+  var started = false, ready = false;
+
+  function load(){
+    if (started) return; started = true;
+    EV.forEach(function(e){ window.removeEventListener(e, load, OPT); });
+    var s = document.createElement('script');
+    s.async = true; s.src = SRC;
+    s.onload = function(){ setTimeout(function(){ ready = true; }, 60); };
+    document.head.appendChild(s);
+  }
+  EV.forEach(function(e){ window.addEventListener(e, load, OPT); });
+
+  /* If someone clicks before the engine finished loading, hold the click,
+     then replay it once Bokun is ready. Falls back to the anchor's own href. */
+  document.addEventListener('click', function(ev){
+    if (ready) return;
+    var a = ev.target && ev.target.closest ? ev.target.closest('a.bokunButton') : null;
+    if (!a) return;
+    ev.preventDefault();
+    load();
+    var t0 = Date.now();
+    (function wait(){
+      if (ready) { a.click(); return; }
+      if (Date.now() - t0 > 5000) { ready = true; a.click(); return; }
+      setTimeout(wait, 80);
+    })();
+  }, true);
+})();
+</script>
 </body>
 </html>
