@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hallstatt Self-Guided Walking Tour with Audio Guide: 17 Stops, Offline | TouringBee</title>
+<meta name="description" content="How to walk Hallstatt without a tour group and still know what you are looking at: the route, 17 audio stops, offline map, €9.99. Start anywhere you like.">
+<link rel="canonical" href="https://hallstattwalk.com/hallstatt-self-guided-walking-tour/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="alternate" hreflang="en" href="https://hallstattwalk.com/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="fr" href="https://hallstattwalk.com/fr/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="de" href="https://hallstattwalk.com/de/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="es" href="https://hallstattwalk.com/es/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="it" href="https://hallstattwalk.com/it/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="pt" href="https://hallstattwalk.com/pt/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="pl" href="https://hallstattwalk.com/pl/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="ru" href="https://hallstattwalk.com/ru/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="x-default" href="https://hallstattwalk.com/hallstatt-self-guided-walking-tour/">
+<style>
+:root{
+  --navy:#0F3054; --navy-2:#16406E; --cream:#FEF3E0; --cream-2:#FBF7EF;
+  --blue:#1668C6; --blue-d:#0E4F9C; --ink:#17222E; --mut:#5A6874; --line:#E3E7EC;
+  --wrap:1120px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue-d)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.22;margin:0 0 .5em;letter-spacing:-.015em}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800}
+h2{font-size:clamp(24px,3.4vw,33px);font-weight:800;color:var(--navy)}
+h3{font-size:20px;font-weight:750}
+p{margin:0 0 1em}
+section{padding:56px 0}
+.lead{font-size:19px;color:#2B3846}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.6) blur(10px);border-bottom:1px solid var(--line)}
+.hdr .bar{display:flex;align-items:center;gap:16px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;letter-spacing:-.02em;font-size:19px}
+.brand img{width:38px;height:38px;border-radius:50%}
+.brand span i{font-style:normal;color:var(--blue)}
+.nav{margin-left:auto;display:flex;align-items:center;gap:14px}
+.menu{position:relative}
+.menu>summary{list-style:none;cursor:pointer;font-weight:650;color:var(--navy);padding:8px 10px;border-radius:9px}
+.menu>summary::-webkit-details-marker{display:none}
+.menu>summary:hover{background:var(--cream)}
+.menu ul{position:absolute;right:0;top:44px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 42px rgba(15,48,84,.14);list-style:none;margin:0;padding:8px;min-width:290px}
+.menu li a{display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:15px}
+.menu li a:hover{background:var(--cream)}
+.menu .all{font-weight:700;color:var(--blue-d);border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.lang{display:flex;flex-wrap:wrap;gap:2px}
+.lang a{font-size:12.5px;font-weight:700;color:var(--mut);text-decoration:none;padding:5px 6px;border-radius:6px}
+.lang a:hover{background:var(--cream);color:var(--navy)}
+.lang a.on{background:var(--navy);color:#fff}
+.hdr .cta{display:none}
+@media(min-width:900px){.hdr .cta{display:inline-flex}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:11px;font-weight:700;font-size:16px;text-decoration:none;background:var(--blue);color:#fff;border:2px solid var(--blue);transition:.15s;text-align:center}
+.btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn.dark{background:#fff;color:var(--navy);border-color:#fff}
+.btn.dark:hover{background:var(--cream);border-color:var(--cream)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.14)}
+.btn.outline{background:#fff;color:var(--blue-d);border-color:var(--blue)}
+.btn.outline:hover{background:var(--cream-2)}
+.btn.block{width:100%}
+.btn.sm{padding:9px 14px;font-size:14.5px;border-radius:9px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;padding:0;isolation:isolate}
+.hero .ph{position:absolute;inset:0;z-index:-2}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,25,44,.72),rgba(9,25,44,.62) 45%,rgba(9,25,44,.86))}
+.hero .inner{padding:74px 0 66px;max-width:790px}
+.chip{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:650;margin-bottom:18px}
+.hero p.sub{font-size:19px;color:#E7EDF5;max-width:640px}
+.hero .btns{display:flex;flex-wrap:wrap;gap:11px;margin-top:24px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14.5px;color:#D5E0EC}
+.hero .facts b{color:#fff}
+
+/* ---------- generic blocks ---------- */
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:1fr}
+.g3{grid-template-columns:1fr}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.soft{background:var(--cream-2)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.card h3{margin-top:0}
+.tiles{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:680px){.tiles{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.tile img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.tile .tx{padding:16px 18px 20px}
+.tile h3{font-size:18.5px;margin-bottom:6px}
+.tile p{font-size:15.5px;color:var(--mut);margin:0}
+
+/* product card */
+.product{background:linear-gradient(135deg,var(--navy),#1B4E82);color:#fff;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr}
+@media(min-width:860px){.product{grid-template-columns:1.05fr .95fr}}
+.product .px{padding:32px}
+.product h2{color:#fff;margin-bottom:.35em}
+.product ul{list-style:none;padding:0;margin:16px 0 22px}
+.product li{padding-left:28px;position:relative;margin-bottom:9px;color:#E4ECF5;font-size:16px}
+.product li::before{content:"✓";position:absolute;left:0;color:#8FD3A6;font-weight:800}
+.product .pimg img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.price{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
+.price b{font-size:34px;font-weight:800}
+.price span{color:#C9D8E8;font-size:15px}
+
+.steps{counter-reset:s}
+.step{position:relative;padding-left:56px;margin-bottom:22px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;width:38px;height:38px;border-radius:50%;background:var(--cream);color:var(--navy);font-weight:800;display:grid;place-items:center;border:1px solid #EADFC7}
+.step h3{margin-bottom:4px;font-size:18px}
+.step p{margin:0;color:var(--mut);font-size:15.5px}
+
+.info{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.info div{padding:16px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:2px}
+@media(min-width:620px){.info div{grid-template-columns:220px 1fr;gap:16px}}
+.info div:last-child{border-bottom:0}
+.info dt,.info b{color:var(--navy);font-weight:700;font-size:15.5px}
+.info span{font-size:15.5px;color:#2B3846}
+
+.notice{border-left:5px solid #D08A15;background:#FFF8EA;padding:18px 20px;border-radius:0 12px 12px 0;margin:24px 0}
+.notice b{color:#8A5A06}
+.ticketbox{background:var(--navy);color:#fff;border-radius:16px;padding:26px}
+.ticketbox h3{color:#fff;margin-top:0}
+.ticketbox p{color:#DCE6F1}
+
+.partners{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.partners{grid-template-columns:repeat(3,1fr)}}
+.partner{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.partner img{aspect-ratio:16/10;object-fit:cover}
+.partner .pb{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.plabel{text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;font-weight:800;color:var(--blue-d)}
+.partner h3{font-size:18px;margin:0}
+.partner .meta{font-size:14.8px;color:var(--mut);flex:1;margin:0}
+
+.faq details{border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;background:#fff}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:700;color:var(--navy);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--blue);font-weight:800}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 18px 16px;color:#2B3846;font-size:16px}
+
+.author{display:grid;gap:20px;align-items:center;grid-template-columns:1fr}
+@media(min-width:640px){.author{grid-template-columns:96px 1fr}}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;display:block}
+
+.final{background:linear-gradient(135deg,#0C2743,#1A4C80);color:#fff;border-radius:18px;padding:38px;text-align:center}
+.final h2{color:#fff}
+.final p{color:#D8E4F0;max-width:640px;margin:0 auto 22px}
+.final .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.disclosure{font-size:13.5px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px;margin-top:34px}
+
+footer{background:var(--navy);color:#C6D5E5;padding:48px 0 110px;font-size:15px}
+footer h4{color:#fff;font-size:15px;margin:0 0 12px;letter-spacing:.03em;text-transform:uppercase}
+footer a{color:#C6D5E5;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:8px}
+.fgrid{display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:760px){.fgrid{grid-template-columns:repeat(4,1fr)}}
+.fbot{border-top:1px solid rgba(255,255,255,.14);margin-top:32px;padding-top:20px;font-size:13.5px;color:#9FB4CA}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(15,48,84,.12);padding:10px 0;transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .in{display:flex;align-items:center;gap:14px}
+.sticky .t{font-size:14.5px;line-height:1.35}
+.sticky .t b{display:block;color:var(--navy);font-size:15.5px}
+.sticky .btn{margin-left:auto;white-space:nowrap}
+@media(max-width:520px){.sticky .t{display:none}.sticky .btn{margin:0;width:100%}}
+
+audio{width:100%;margin-top:8px}
+.small{font-size:14.5px;color:var(--mut)}
+.pill{display:inline-block;background:var(--cream);border:1px solid #EEE1C6;color:#7A5A16;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+a.bokunButton.tb-inline{display:inline!important;padding:0!important;margin:0!important;border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;font:inherit!important;color:var(--blue-d)!important;text-decoration:underline!important;width:auto!important;height:auto!important}
+.article h2{margin-top:1.6em}.article .fig{margin:1.7em 0}.article .fig img{width:100%;height:auto;border-radius:var(--r)}.article .box{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:16px 18px;margin:1.6em 0}.article .box p{margin:0 0 .5em}.article .box p:last-child{margin:0}.article .box ul{margin:.4em 0 0;padding-left:20px}.hero-sg h1{margin:.2em 0 .3em}.hero-sg .lede{font-size:18px;color:var(--mut);margin:0 0 14px}ul.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}ul.chips li{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:999px;padding:5px 12px;font-size:14px;color:var(--navy);font-weight:600}.cta-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px}.btn.ghost{background:transparent;color:var(--blue-d);border:1px solid var(--blue-d)}.tb-banner{display:flex;gap:14px;align-items:flex-start;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}.tb-banner h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.tb-banner p{margin:0 0 12px}.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:1.4em 0}.cmp>div{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:14px 16px}.cmp>div p{margin:0;font-size:15px;line-height:1.5}@media(max-width:760px){.cmp{grid-template-columns:1fr}}.stages{margin:1.6em 0}.stages ol{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none;counter-reset:st}.stages li{counter-increment:st;flex:1 1 150px;min-width:140px;background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:10px 12px;font-size:14.5px;line-height:1.35;color:var(--navy)}.stages li::before{content:counter(st);display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;color:#8A6A2A;margin-bottom:3px}@media(max-width:560px){.stages li{flex:1 1 100%}}.readnext{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:1.4em 0;list-style:none;padding:0}.readnext li{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:12px 14px}@media(max-width:760px){.readnext{grid-template-columns:repeat(2,1fr)}}.sgaudio{width:100%;margin:.6em 0}
+</style>
+<meta property="og:type" content="product">
+<meta property="og:title" content="Hallstatt Self-Guided Walking Tour with Audio Guide: 17 Stops, Offline | TouringBee">
+<meta property="og:description" content="How to walk Hallstatt without a tour group and still know what you are looking at: the route, 17 audio stops, offline map, €9.99. Start anywhere you like.">
+<meta property="og:url" content="https://hallstattwalk.com/hallstatt-self-guided-walking-tour/">
+<meta property="og:image" content="https://hallstattwalk.com/img/tile-classic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Hallstatt Self-Guided Walking Tour with Audio Guide: 17 Stops, Offline | TouringBee",
+   "description": "How to walk Hallstatt without a tour group and still know what you are looking at: the route, 17 audio stops, offline map, €9.99. Start anywhere you like.",
+   "inLanguage": "en",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hallstattwalk.com/hallstatt-self-guided-walking-tour/"
+   },
+   "image": "https://hallstattwalk.com/img/tile-classic.webp",
+   "author": {
+    "@type": "Organization",
+    "name": "TouringBee"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "TouringBee",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://hallstattwalk.com/img/logo.webp"
+    }
+   },
+   "datePublished": "2026-11-05",
+   "dateModified": "2026-11-05"
+  },
+  {
+   "@type": "Product",
+   "name": "Hallstatt Town Tour — audio guide",
+   "description": "How to walk Hallstatt without a tour group and still know what you are looking at: the route, 17 audio stops, offline map, €9.99. Start anywhere you like.",
+   "brand": {
+    "@type": "Brand",
+    "name": "TouringBee"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "9.99",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://hallstattwalk.com/hallstatt-self-guided-walking-tour/"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Hallstatt guide",
+     "item": "https://hallstattwalk.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "All guides",
+     "item": "https://hallstattwalk.com/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Hallstatt Self-Guided Walking Tour with Audio Guide: 17 Stops, Offline"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can you see Hallstatt on your own, without a guided tour?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The lanes, the market square, both churchyards, the mountain cemetery and the northern photo point are free and always open. The only paid places are the charnel house, the museum and the salt mine. The question is not whether you will be let in, but where the explanations come from — and that is what the audio guide covers."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many stops are there and how long does it take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "17 audio stops. Allow about two hours for an unhurried walk with photographs and stops; without lingering it is noticeably quicker. From the Lahn bus terminal to the northern photo point is about a kilometre."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you need internet during the walk?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The route, the map and the audio download in advance over Wi-Fi, and after that the phone works without a connection. That helps anyway, because signal in the valley can be patchy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do the stories start automatically when you reach a place?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, and that is deliberate. The map shows where you are and where the next stop is; you start the story yourself when you have arrived and are ready to listen. Nothing cuts into a conversation, and nothing fires at the wrong moment because you turned down a side lane."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the audio guide include the charnel house ticket?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Entry tickets are never included: charnel house €2, museum €12, salt mine €49 or €33. The audio guide has stories at the entrance and inside, but you pay to go in on the spot."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "I am arriving by train — where do I start?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The ferry from the station docks in the centre of the village, at the Hallstatt Markt pier, a minute's walk from the market square. That is the middle of the route. Start at the nearest stop, do the northern half as far as the photo point, then walk south along the water."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What languages is the audio guide in?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "English, German, Spanish, Italian and Russian. You choose the language in the app when you start the tour."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it suitable for children?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The route is short and the stories are not a lecture: children listen to the one about skulls with painted wreaths, and the one about what was carried down the mountain, more willingly than adults do. A pushchair is fine along the promenade and the square, but steps lead up to the cemetery and the charnel house."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="../img/logo.webp" alt="HallstattWalk" width="38" height="38"><span>Hallstatt<i>Walk</i></span></a>
+    <nav class="nav">
+      <details class="menu">
+        <summary>Guides &#9662;</summary>
+        <ul>
+          
+          <li><a href="/hallstatt-self-guided-walking-tour/">Audio guide</a></li><li><a href="/best-time-to-visit-hallstatt/">Best time to visit</a></li>
+          <li><a href="/what-to-see-in-hallstatt/">What to See in Hallstatt</a></li>
+          <li><a href="/hallstatt-from-salzburg/">Hallstatt from Salzburg</a></li>
+          <li><a href="/hallstatt-from-vienna/">Hallstatt from Vienna</a></li>
+          <li><a href="/hallstatt-christmas-market/">Hallstatt Christmas Market</a></li>
+          <li><a href="/hallstatt-salt-mine/">Hallstatt Salt Mine</a></li>
+          <li><a href="/guides/#hallstatt-ferry">The Train + Ferry Arrival <span class="pill">soon</span></a></li>
+          <li><a href="/guides/#hallstatt-bone-house">The Bone House <span class="pill">soon</span></a></li>
+          <li><a class="all" href="/guides/">All guides &rarr;</a></li>
+        </ul>
+      </details>
+      <a class="btn sm cta bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="header">Audio guide &euro;9.99</a>
+      <nav class="lang"><a class="on" href="/hallstatt-self-guided-walking-tour/">EN</a><a href="/fr/hallstatt-self-guided-walking-tour/">FR</a><a href="/de/hallstatt-self-guided-walking-tour/">DE</a><a href="/es/hallstatt-self-guided-walking-tour/">ES</a><a href="/it/hallstatt-self-guided-walking-tour/">IT</a><a href="/pt/hallstatt-self-guided-walking-tour/">PT</a><a href="/pl/hallstatt-self-guided-walking-tour/">PL</a><a href="/ru/hallstatt-self-guided-walking-tour/">RU</a></nav>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap article">
+<p class="small"><a href="/">Hallstatt guide</a> &rarr; <a href="/guides/">All guides</a></p>
+<div class="hero-sg"><h1>Hallstatt Self-Guided Walking Tour with the TouringBee Audio Guide</h1><p class="lede">No group, no timetable: through the village from the southern end to the northern viewpoint, 17 stops.</p><ul class="chips"><li>★ 4.7</li><li>~2 hours</li><li>17 stops</li><li>offline</li><li>€9.99</li></ul><p class="cta-row"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="hero">Get the audio guide — €9.99</a><a class="btn ghost" href="#how">How it works</a></p><p class="small">By Eugene · Updated 5 November 2026</p></div>
+
+
+<figure class="fig"><img src="../img/tile-classic.webp" alt="Hallstatt from the water: wooden houses stacked between the lake and the Dachstein cliffs" width="800" height="600" fetchpriority="high"></figure>
+<h2>Short answer: do you need a guided tour here?</h2>
+
+<p>Hallstatt is a village you can cross in fifteen minutes, and there is nowhere in it to get lost. The lanes, the market square, both churchyards, the mountain cemetery and the northern photo point are free and always open; the only things you pay to enter are the charnel house (€2), the museum (€12) and the salt mine. A guide to lead you by the hand is genuinely optional here.</p>
+
+<p>The real question is where the context comes from. You can read the plaques, you can walk with a guidebook in your hand, you can read up on the village beforehand. The <a class="bokunButton tb-inline" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="inline_prose">TouringBee audio guide</a> does the same job without asking you to stare at a screen: you reach a place, start the stop and listen while your eyes stay on the village. Seventeen stops — why the houses are stacked on top of each other, what the women carried down the mountain twice a day, and what happened here in 1846 that gave an entire period of European prehistory its name.</p>
+
+<div class="tb-banner"><div><h3>Planning to walk Hallstatt on your own?</h3><p>The TouringBee audio guide takes you through the village: 17 stops from the southern end, past the market square and the charnel house, to the northern viewpoint. On your phone, offline, at your own pace, starting wherever you like.</p><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="banner1">Hallstatt audio guide — €9.99</a></div></div>
+
+<h2>Why it is better with an audio guide</h2>
+
+<p><b>You understand what you are looking at.</b> The houses, the steps, a skull with a painted wreath — each has an explanation, and none of them is written on a sign nearby.</p>
+
+<p><b>You go at your own pace.</b> Stop for coffee, come back to the same spot, listen again. Nobody waits for you and you wait for nobody.</p>
+
+<p><b>No signal needed.</b> The route, the map and the audio download in advance; after that the phone works on its own. You can stop worrying about roaming in the valley.</p>
+
+<h2>Listen to the opening of the walk</h2>
+
+<audio class="sgaudio" controls preload="none" src="../audio/hallstatt-intro-en.mp3"></audio><p class="small">the introduction, about a minute.</p>
+
+<h2>One story in full: why the skulls are painted</h2>
+
+<p>In the chapel of St Michael, below the Catholic church, there are shelves of human skulls. The Hallstatt tourist office puts the number of painted ones at <b>more than six hundred</b>, and a survey carried out between 1948 and 1950 counted <b>2,104 skulls</b> in the chapel, painted and unpainted together. In a village whose parish registers record some thirty thousand deaths before 1900, that is a tiny fraction — which raises the obvious question of why these ones.</p>
+
+<p>The obvious answer is that the cemetery between the mountain and the lake ran out of room, so graves were reused and the bones moved. The tourist office offers that explanation carefully: as the view held before a study carried out between 1974 and 1993, neither confirming nor rejecting it. What is firmly known is something else — the move was a second funeral, not a disposal. So that a person would not dissolve into a common heap, a name or initials were written on the frontal bone and a wreath was painted around them.</p>
+
+<p>And here is the detail worth lingering over. A skull's age can be read from its wreath: the darker the wreath, the older the skull. The earliest are dense and dark. Then come flowers on the forehead, then green leaves at the temples — oak, ivy, oleander. A black cross on the forehead is almost always there. The latest paintings, from the early nineteenth century, are recognisable at a glance: thin ivy branches on either side, Latin script instead of Gothic, a narrower cross. You can stand in front of a shelf and sort it by date yourself, without reading a single caption.</p>
+
+<p>There are seventeen stories like this one on the route.</p>
+
+<p style="text-align:center;margin:1.4em 0"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="after_story">Hear the rest of the stories — €9.99</a></p>
+
+<h2>The route: 7 stages, 17 stops</h2>
+
+<p>Below are the 7 main stages of the walk. In the app the route is split into 17 stops with audio stories and illustrations.</p>
+
+<div class="stages"><ol><li>The southern end of the village, the Lahn district</li><li>The lakeside promenade</li><li>The market square</li><li>The Protestant church</li><li>The covered steps and the upper lanes</li><li>The Catholic church, the mountain cemetery and the charnel house</li><li>The northern photo point on Gosaumühlstraße</li></ol></div>
+
+<p><b>1. The southern end of the village, the Lahn district.</b> Buses 542 and 543 arrive here, and this is where the car parks and the valley station of the salt-mountain funicular are.</p>
+
+<p><b>2. The lakeside promenade.</b> Boathouses at the water, swans, and the first view of the whole village from below.</p>
+
+<p><b>3. The market square.</b> Painted facades around the Holy Trinity column — the only flat ground in Hallstatt.</p>
+
+<p><b>4. The Protestant church.</b> The spire by the water that ends up in every photograph of the village.</p>
+
+<p><b>5. The covered steps and the upper lanes.</b> The climb from the square to the church is the only real ascent on the route, around thirty metres. This is where you see why the houses are stacked: between the cliff and the shore there simply is no width.</p>
+
+<p><b>6. The Catholic church, the mountain cemetery and the charnel house.</b> The cemetery is free and almost always empty; the charnel house costs €2.</p>
+
+<p><b>7. The northern photo point on Gosaumühlstraße.</b> The postcard angle, the one Hallstatt is known by everywhere.</p>
+
+<p><i>From the Lahn bus terminal to the northern photo point this way is about a kilometre. Starting instead from the funicular valley station adds roughly another two hundred and fifty metres. For comparison: the waymarked "Ortsrundgang Hallstatt" circuit published by the tourist board, which covers the same places and loops back, is given as 2.7 km with 72 metres of ascent and about 50 minutes of walking.</i></p>
+
+<p><i>The route does not cover every lane in the village — it is the main line. You can leave it and rejoin at any point: the order of the stops is a recommendation, not a requirement.</i></p>
+
+<div class="box"><p>Between the Lahn pier and the northern photo point live 237 people. On a peak day, by the municipality's own calculation in the World Heritage management plan, that is almost forty visitors each.</p></div>
+
+<h2>If you arrive by train</h2>
+
+<p>Hallstatt's railway station is on the far shore of the lake, and a ferry crosses to the village — seven minutes, €4 one way, cash only. It docks <b>in the centre, at the Hallstatt Markt pier</b>, about a minute's walk from the market square. Which means you arrive not at the start of the route but in the middle of it.</p>
+
+<p>That is not a problem: you can start anywhere. The sensible order is to do the northern half first — the square, the churches, the charnel house, the photo point — and then walk south along the water to the promenade and Lahn. Getting back to the ferry is the same few hundred metres.</p>
+
+<p>The ferry runs year round and is timed to the trains; the operator notes that departure times can shift if a train is late. <a href="https://hallstattschifffahrt.at/en/#fahrplan" target="_blank" rel="noopener">Current times and fares are on the Hallstättersee Schifffahrt site</a> — check the last sailing before you set out, as it depends on the date and on the rail timetable.</p>
+
+<h2>On your own, with an audio guide, or with a live guide</h2>
+
+<div class="cmp"><div><p><b>On your own — €0.</b> Any time, for as long as you like. The lanes, the square, the cemetery and the photo point are free. You will be sourcing the context yourself: plaques, a guidebook, reading done in advance.</p></div><div><p><b>With the TouringBee audio guide — €9.99 per person.</b> One payment, a year of access. 17 stops, an offline map, illustrations. You start a minute after you arrive, on any day and at any hour, and break off as often as you like. Everyone in your group listens on their own phone.</p></div><div><p><b>With a live guide — from €5 per person.</b> The tourist office runs a "Welterberundgang" through the historic centre: 1.5 hours, in German, English and Italian, tickets at the office on Seestraße (price and contents as published by the office, checked 5 November 2026). The tours run to a schedule that needs checking in advance. A private guided walk starts at €168 for a group.</p></div></div>
+
+<p><i>The main difference is not the price but when you walk. People often come to Hallstatt for a few hours between trains or coaches — and fitting into somebody else's timetable inside a window like that does not always work. The audio guide starts when you step off the ferry.</i></p>
+
+<p><i>Entry tickets are separate whichever you choose: charnel house €2, World Heritage Museum €12, salt mine €49 with the funicular or €33 without it.</i></p>
+
+<h2 id="how">How it works</h2>
+
+<p><b>1. You buy it.</b> One payment of €9.99. The activation email arrives within a few minutes.</p>
+
+<p><b>2. You install the app.</b> TouringBee for iPhone and Android; you pick the language inside it.</p>
+
+<p><b>3. You download the tour in advance.</b> Over Wi-Fi at the hotel or on the train — after that you need no internet.</p>
+
+<p><b>4. You walk and listen.</b> The map shows where you are and where the next stop is. When you reach it, you open it and press play. Nothing starts by itself: a story will not cut into a conversation, and it will not fire at the wrong moment because you turned down a side lane. Pause, repeat and go back to any stop as often as you like, for a year.</p>
+
+<p><i>A tip: charge the phone to at least 80% and bring headphones — it gets busy by the water and on the square.</i></p>
+
+
+
+<h2>Why you can trust this guide</h2>
+
+<p><b>4.7 on the App Store</b> — as of 5 November 2026, from 85 ratings on the US storefront. <b>The scripts are written by historians</b> and the narration is professional. <b>One payment, a year of access</b>, no subscription and nothing more to pay along the route.</p>
+
+<p>There are no reviews of the Hallstatt route itself yet — we sell it only here, and reviews do not accumulate on it. What follows are reviews of the TouringBee app and of our other routes, quoted verbatim with the store they come from. None of them mentions Hallstatt; they are a verdict on how the format works.</p>
+
+<p><i>"Perfect for a an overview for a first time visitor"</i> — EGP1997, App Store (UK storefront), February 2026, 5★, on the Vienna route.</p>
+
+<p><i>"Very informative. Great way to walk around the city."</i> — David Brisbane, App Store (Australian storefront), May 2025, 5★, on the Vienna route.</p>
+
+<p><i>"Great stories and history with integrated map and pictures. Exactly what I wanted. Exploring at my own pace."</i> — Dino in Colorado, App Store (US storefront), May 2026, 5★.</p>
+
+<p><i>"Great for exploring at your own speed - and you can repeat if you need!"</i> — Flick the switch, App Store (UK storefront), June 2025, 5★.</p>
+
+
+
+<div class="box"><p><b>Hallstatt Town Tour — audio guide</b></p><p>€9.99 · one payment · a year of access · per person</p><ul><li>17 stops through the village, from the southern end to the northern viewpoint</li><li>Offline map — no roaming needed</li><li>Scripts written by historians, with illustrations</li><li>English, German, Spanish, Italian and Russian</li></ul><p style="margin-top:.9em"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="product_card">Get the audio guide — €9.99</a></p></div>
+
+<h2>Worth knowing before you set off</h2>
+
+<p><b>Where to start.</b> The route is laid out south to north, but you can begin anywhere. Arriving by bus or car, start at Lahn and walk along the water. Arriving by train, you land in the centre at the Markt pier, and it is easier to go up to the churches first and leave the promenade for the way back.</p>
+
+<p><b>Shoes and gradient.</b> The main line runs along the water and is almost flat. The one climb is the covered steps from the square up to the Catholic church and the charnel house, about thirty metres of height. Leave the heels at the hotel.</p>
+
+<p><b>When to walk.</b> Before half past nine in the morning and after half past four in the afternoon the village belongs to the people staying in it. Those are the best hours to listen, and the photographs come out without the backs of other people's heads.</p>
+
+<p><b>Tickets are not included.</b> Charnel house €2, World Heritage Museum €12, salt mine €49 with the funicular. <a href="https://www.getyourguide.com/hallstatt-l32535/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Tickets and tours in Hallstatt</a> can be booked ahead.</p>
+
+<h2>Frequently asked questions</h2>
+
+<p><b>Can you see Hallstatt on your own, without a guided tour?</b><br>
+Yes. The lanes, the market square, both churchyards, the mountain cemetery and the northern photo point are free and always open. The only paid places are the charnel house, the museum and the salt mine. The question is not whether you will be let in, but where the explanations come from — and that is what the audio guide covers.</p>
+
+<p><b>How many stops are there and how long does it take?</b><br>
+17 audio stops. Allow about two hours for an unhurried walk with photographs and stops; without lingering it is noticeably quicker. From the Lahn bus terminal to the northern photo point is about a kilometre.</p>
+
+<p><b>Do you need internet during the walk?</b><br>
+No. The route, the map and the audio download in advance over Wi-Fi, and after that the phone works without a connection. That helps anyway, because signal in the valley can be patchy.</p>
+
+<p><b>Do the stories start automatically when you reach a place?</b><br>
+No, and that is deliberate. The map shows where you are and where the next stop is; you start the story yourself when you have arrived and are ready to listen. Nothing cuts into a conversation, and nothing fires at the wrong moment because you turned down a side lane.</p>
+
+<p><b>Does the audio guide include the charnel house ticket?</b><br>
+No. Entry tickets are never included: charnel house €2, museum €12, salt mine €49 or €33. The audio guide has stories at the entrance and inside, but you pay to go in on the spot.</p>
+
+<p><b>I am arriving by train — where do I start?</b><br>
+The ferry from the station docks in the centre of the village, at the Hallstatt Markt pier, a minute's walk from the market square. That is the middle of the route. Start at the nearest stop, do the northern half as far as the photo point, then walk south along the water.</p>
+
+<p><b>What languages is the audio guide in?</b><br>
+English, German, Spanish, Italian and Russian. You choose the language in the app when you start the tour.</p>
+
+<p><b>Is it suitable for children?</b><br>
+The route is short and the stories are not a lecture: children listen to the one about skulls with painted wreaths, and the one about what was carried down the mountain, more willingly than adults do. A pushchair is fine along the promenade and the square, but steps lead up to the cemetery and the charnel house.</p>
+
+<h2>Read next</h2>
+
+<ul class="readnext"><li><a href="/what-to-see-in-hallstatt/">What to see in Hallstatt</a></li><li><a href="/best-time-to-visit-hallstatt/">Best time to visit</a></li><li><a href="/hallstatt-salt-mine/">The salt mine</a></li><li><a href="/hallstatt-from-salzburg/">Getting here from Salzburg</a></li></ul>
+
+<h2>The verdict</h2>
+
+<p>Hallstatt can be walked without a guide in an hour, and it stays with you as a picture. With the audio guide the same walk takes about two hours and stays with you as a place with seven thousand years of history and very little flat ground. The difference is €9.99 once, and a year of access.</p>
+
+<p style="text-align:center;margin:1.8em 0"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="final_cta">Walk Hallstatt with the audio guide →</a></p>
+
+
+
+<p><i>Entry prices, the ferry timetable and the tourist office tour were checked on 5 November 2026 against Hallstättersee Schifffahrt, Salzwelten, the World Heritage Museum and dachstein.salzkammergut.at. The ferry timetable runs to 13 December 2026. Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you.</i></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" style="color:#fff"><img src="../img/logo.webp" alt="" width="38" height="38" loading="lazy"><span>Hallstatt<i style="color:#7FB6F2">Walk</i></span></a>
+        <p style="margin-top:12px;font-size:14.5px">An independent guide to Hallstatt and the Salzkammergut, by the team behind the TouringBee audio guides.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/">Hallstatt complete guide</a></li>
+          <li><a href="/guides/">All guides</a></li>
+          <li><a class="bokunButton tb-inline" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="footer">Hallstatt audio guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li>
+          <li><a href="https://touringbee.com/terms-and-conditions/" target="_blank" rel="noopener">TouringBee terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Languages</h4>
+        <ul>
+          <li><a href="/">English</a> &middot; <a href="/fr/">Fran&ccedil;ais</a></li>
+          <li><a href="/de/">Deutsch</a> &middot; <a href="/es/">Espa&ntilde;ol</a></li>
+          <li><a href="/it/">Italiano</a> &middot; <a href="/pt/">Portugu&ecirc;s</a></li>
+          <li><a href="/pl/">Polski</a> &middot; <a href="/ru/">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">&copy; 2026 HallstattWalk — a TouringBee project. Hallstatt-Dachstein / Salzkammergut is a UNESCO World Heritage Cultural Landscape. Please treat the village as the home it still is.</div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="wrap in">
+    <div class="t"><b>Hallstatt Town Tour — 17 stops, offline</b>Self-guided audio walk &middot; &euro;9.99</div>
+    <a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=en&amp;partialView=1" data-cta="sticky">Get the audio guide</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var s=document.getElementById('sticky');
+  function t(){ (window.scrollY>900) ? s.classList.add('on') : s.classList.remove('on'); }
+  addEventListener('scroll',t,{passive:true}); t();
+})();
+</script>
+
+<!-- Bokun booking engine: loaded only after the first real user interaction, so
+     synthetic audits (Lighthouse/PSI) never pay for it. -->
+<script>
+(function(){
+  var SRC = 'https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=9c09e243-b0be-4711-9c08-7fbbbafcd4e7';
+  var EV  = ['mouseover','touchstart','pointerdown','scroll','keydown'];
+  var OPT = {passive:true, capture:true};
+  var started = false, ready = false;
+
+  function load(){
+    if (started) return; started = true;
+    EV.forEach(function(e){ window.removeEventListener(e, load, OPT); });
+    var s = document.createElement('script');
+    s.async = true; s.src = SRC;
+    s.onload = function(){ setTimeout(function(){ ready = true; }, 60); };
+    document.head.appendChild(s);
+  }
+  EV.forEach(function(e){ window.addEventListener(e, load, OPT); });
+
+  /* If someone clicks before the engine finished loading, hold the click,
+     then replay it once Bokun is ready. Falls back to the anchor's own href. */
+  document.addEventListener('click', function(ev){
+    if (ready) return;
+    var a = ev.target && ev.target.closest ? ev.target.closest('a.bokunButton') : null;
+    if (!a) return;
+    ev.preventDefault();
+    load();
+    var t0 = Date.now();
+    (function wait(){
+      if (ready) { a.click(); return; }
+      if (Date.now() - t0 > 5000) { ready = true; a.click(); return; }
+      setTimeout(wait, 80);
+    })();
+  }, true);
+})();
+</script>
+</body>
+</html>

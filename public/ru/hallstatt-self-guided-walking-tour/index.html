@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гальштат самостоятельно: прогулка с аудиогидом, 17 остановок, офлайн | TouringBee</title>
+<meta name="description" content="Как пройти Гальштат без экскурсии и понимать, что видите: маршрут по деревне, 17 аудиоостановок, офлайн-карта, 9,99 €. Начать можно с любой точки.">
+<link rel="canonical" href="https://hallstattwalk.com/ru/hallstatt-self-guided-walking-tour/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+<link rel="alternate" hreflang="en" href="https://hallstattwalk.com/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="fr" href="https://hallstattwalk.com/fr/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="de" href="https://hallstattwalk.com/de/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="es" href="https://hallstattwalk.com/es/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="it" href="https://hallstattwalk.com/it/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="pt" href="https://hallstattwalk.com/pt/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="pl" href="https://hallstattwalk.com/pl/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="ru" href="https://hallstattwalk.com/ru/hallstatt-self-guided-walking-tour/">
+<link rel="alternate" hreflang="x-default" href="https://hallstattwalk.com/hallstatt-self-guided-walking-tour/">
+<style>
+:root{
+  --navy:#0F3054; --navy-2:#16406E; --cream:#FEF3E0; --cream-2:#FBF7EF;
+  --blue:#1668C6; --blue-d:#0E4F9C; --ink:#17222E; --mut:#5A6874; --line:#E3E7EC;
+  --wrap:1120px; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue-d)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.22;margin:0 0 .5em;letter-spacing:-.015em}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800}
+h2{font-size:clamp(24px,3.4vw,33px);font-weight:800;color:var(--navy)}
+h3{font-size:20px;font-weight:750}
+p{margin:0 0 1em}
+section{padding:56px 0}
+.lead{font-size:19px;color:#2B3846}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.6) blur(10px);border-bottom:1px solid var(--line)}
+.hdr .bar{display:flex;align-items:center;gap:16px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;letter-spacing:-.02em;font-size:19px}
+.brand img{width:38px;height:38px;border-radius:50%}
+.brand span i{font-style:normal;color:var(--blue)}
+.nav{margin-left:auto;display:flex;align-items:center;gap:14px}
+.menu{position:relative}
+.menu>summary{list-style:none;cursor:pointer;font-weight:650;color:var(--navy);padding:8px 10px;border-radius:9px}
+.menu>summary::-webkit-details-marker{display:none}
+.menu>summary:hover{background:var(--cream)}
+.menu ul{position:absolute;right:0;top:44px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 42px rgba(15,48,84,.14);list-style:none;margin:0;padding:8px;min-width:290px}
+.menu li a{display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:15px}
+.menu li a:hover{background:var(--cream)}
+.menu .all{font-weight:700;color:var(--blue-d);border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.lang{display:flex;flex-wrap:wrap;gap:2px}
+.lang a{font-size:12.5px;font-weight:700;color:var(--mut);text-decoration:none;padding:5px 6px;border-radius:6px}
+.lang a:hover{background:var(--cream);color:var(--navy)}
+.lang a.on{background:var(--navy);color:#fff}
+.hdr .cta{display:none}
+@media(min-width:900px){.hdr .cta{display:inline-flex}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:11px;font-weight:700;font-size:16px;text-decoration:none;background:var(--blue);color:#fff;border:2px solid var(--blue);transition:.15s;text-align:center}
+.btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn.dark{background:#fff;color:var(--navy);border-color:#fff}
+.btn.dark:hover{background:var(--cream);border-color:var(--cream)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.14)}
+.btn.outline{background:#fff;color:var(--blue-d);border-color:var(--blue)}
+.btn.outline:hover{background:var(--cream-2)}
+.btn.block{width:100%}
+.btn.sm{padding:9px 14px;font-size:14.5px;border-radius:9px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;padding:0;isolation:isolate}
+.hero .ph{position:absolute;inset:0;z-index:-2}
+.hero .ph img{width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,25,44,.72),rgba(9,25,44,.62) 45%,rgba(9,25,44,.86))}
+.hero .inner{padding:74px 0 66px;max-width:790px}
+.chip{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:650;margin-bottom:18px}
+.hero p.sub{font-size:19px;color:#E7EDF5;max-width:640px}
+.hero .btns{display:flex;flex-wrap:wrap;gap:11px;margin-top:24px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:14.5px;color:#D5E0EC}
+.hero .facts b{color:#fff}
+
+/* ---------- generic blocks ---------- */
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:1fr}
+.g3{grid-template-columns:1fr}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.soft{background:var(--cream-2)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.card h3{margin-top:0}
+.tiles{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:680px){.tiles{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.tile img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.tile .tx{padding:16px 18px 20px}
+.tile h3{font-size:18.5px;margin-bottom:6px}
+.tile p{font-size:15.5px;color:var(--mut);margin:0}
+
+/* product card */
+.product{background:linear-gradient(135deg,var(--navy),#1B4E82);color:#fff;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr}
+@media(min-width:860px){.product{grid-template-columns:1.05fr .95fr}}
+.product .px{padding:32px}
+.product h2{color:#fff;margin-bottom:.35em}
+.product ul{list-style:none;padding:0;margin:16px 0 22px}
+.product li{padding-left:28px;position:relative;margin-bottom:9px;color:#E4ECF5;font-size:16px}
+.product li::before{content:"✓";position:absolute;left:0;color:#8FD3A6;font-weight:800}
+.product .pimg img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.price{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
+.price b{font-size:34px;font-weight:800}
+.price span{color:#C9D8E8;font-size:15px}
+
+.steps{counter-reset:s}
+.step{position:relative;padding-left:56px;margin-bottom:22px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;width:38px;height:38px;border-radius:50%;background:var(--cream);color:var(--navy);font-weight:800;display:grid;place-items:center;border:1px solid #EADFC7}
+.step h3{margin-bottom:4px;font-size:18px}
+.step p{margin:0;color:var(--mut);font-size:15.5px}
+
+.info{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.info div{padding:16px 18px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:2px}
+@media(min-width:620px){.info div{grid-template-columns:220px 1fr;gap:16px}}
+.info div:last-child{border-bottom:0}
+.info dt,.info b{color:var(--navy);font-weight:700;font-size:15.5px}
+.info span{font-size:15.5px;color:#2B3846}
+
+.notice{border-left:5px solid #D08A15;background:#FFF8EA;padding:18px 20px;border-radius:0 12px 12px 0;margin:24px 0}
+.notice b{color:#8A5A06}
+.ticketbox{background:var(--navy);color:#fff;border-radius:16px;padding:26px}
+.ticketbox h3{color:#fff;margin-top:0}
+.ticketbox p{color:#DCE6F1}
+
+.partners{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.partners{grid-template-columns:repeat(3,1fr)}}
+.partner{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.partner img{aspect-ratio:16/10;object-fit:cover}
+.partner .pb{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.plabel{text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;font-weight:800;color:var(--blue-d)}
+.partner h3{font-size:18px;margin:0}
+.partner .meta{font-size:14.8px;color:var(--mut);flex:1;margin:0}
+
+.faq details{border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:10px;background:#fff}
+.faq summary{cursor:pointer;padding:16px 18px;font-weight:700;color:var(--navy);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--blue);font-weight:800}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 18px 16px;color:#2B3846;font-size:16px}
+
+.author{display:grid;gap:20px;align-items:center;grid-template-columns:1fr}
+@media(min-width:640px){.author{grid-template-columns:96px 1fr}}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;display:block}
+
+.final{background:linear-gradient(135deg,#0C2743,#1A4C80);color:#fff;border-radius:18px;padding:38px;text-align:center}
+.final h2{color:#fff}
+.final p{color:#D8E4F0;max-width:640px;margin:0 auto 22px}
+.final .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+.disclosure{font-size:13.5px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px;margin-top:34px}
+
+footer{background:var(--navy);color:#C6D5E5;padding:48px 0 110px;font-size:15px}
+footer h4{color:#fff;font-size:15px;margin:0 0 12px;letter-spacing:.03em;text-transform:uppercase}
+footer a{color:#C6D5E5;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:8px}
+.fgrid{display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:760px){.fgrid{grid-template-columns:repeat(4,1fr)}}
+.fbot{border-top:1px solid rgba(255,255,255,.14);margin-top:32px;padding-top:20px;font-size:13.5px;color:#9FB4CA}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 26px rgba(15,48,84,.12);padding:10px 0;transform:translateY(110%);transition:transform .25s}
+.sticky.on{transform:none}
+.sticky .in{display:flex;align-items:center;gap:14px}
+.sticky .t{font-size:14.5px;line-height:1.35}
+.sticky .t b{display:block;color:var(--navy);font-size:15.5px}
+.sticky .btn{margin-left:auto;white-space:nowrap}
+@media(max-width:520px){.sticky .t{display:none}.sticky .btn{margin:0;width:100%}}
+
+audio{width:100%;margin-top:8px}
+.small{font-size:14.5px;color:var(--mut)}
+.pill{display:inline-block;background:var(--cream);border:1px solid #EEE1C6;color:#7A5A16;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+a.bokunButton.tb-inline{display:inline!important;padding:0!important;margin:0!important;border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;font:inherit!important;color:var(--blue-d)!important;text-decoration:underline!important;width:auto!important;height:auto!important}
+.article h2{margin-top:1.6em}.article .fig{margin:1.7em 0}.article .fig img{width:100%;height:auto;border-radius:var(--r)}.article .box{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:16px 18px;margin:1.6em 0}.article .box p{margin:0 0 .5em}.article .box p:last-child{margin:0}.article .box ul{margin:.4em 0 0;padding-left:20px}.hero-sg h1{margin:.2em 0 .3em}.hero-sg .lede{font-size:18px;color:var(--mut);margin:0 0 14px}ul.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}ul.chips li{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:999px;padding:5px 12px;font-size:14px;color:var(--navy);font-weight:600}.cta-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px}.btn.ghost{background:transparent;color:var(--blue-d);border:1px solid var(--blue-d)}.tb-banner{display:flex;gap:14px;align-items:flex-start;border:2px solid #0ea2e6;background:#f2f9fd;border-radius:12px;padding:16px 18px;margin:1.8em 0}.tb-banner h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.tb-banner p{margin:0 0 12px}.cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:1.4em 0}.cmp>div{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:14px 16px}.cmp>div p{margin:0;font-size:15px;line-height:1.5}@media(max-width:760px){.cmp{grid-template-columns:1fr}}.stages{margin:1.6em 0}.stages ol{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none;counter-reset:st}.stages li{counter-increment:st;flex:1 1 150px;min-width:140px;background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:10px 12px;font-size:14.5px;line-height:1.35;color:var(--navy)}.stages li::before{content:counter(st);display:block;font-size:11.5px;font-weight:700;letter-spacing:.06em;color:#8A6A2A;margin-bottom:3px}@media(max-width:560px){.stages li{flex:1 1 100%}}.readnext{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:1.4em 0;list-style:none;padding:0}.readnext li{background:var(--cream-2);border:1px solid #EEE1C6;border-radius:var(--r);padding:12px 14px}@media(max-width:760px){.readnext{grid-template-columns:repeat(2,1fr)}}.sgaudio{width:100%;margin:.6em 0}
+</style>
+<meta property="og:type" content="product">
+<meta property="og:title" content="Гальштат самостоятельно: прогулка с аудиогидом, 17 остановок, офлайн | TouringBee">
+<meta property="og:description" content="Как пройти Гальштат без экскурсии и понимать, что видите: маршрут по деревне, 17 аудиоостановок, офлайн-карта, 9,99 €. Начать можно с любой точки.">
+<meta property="og:url" content="https://hallstattwalk.com/ru/hallstatt-self-guided-walking-tour/">
+<meta property="og:image" content="https://hallstattwalk.com/img/tile-classic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Гальштат самостоятельно: прогулка с аудиогидом, 17 остановок, офлайн | TouringBee",
+   "description": "Как пройти Гальштат без экскурсии и понимать, что видите: маршрут по деревне, 17 аудиоостановок, офлайн-карта, 9,99 €. Начать можно с любой точки.",
+   "inLanguage": "ru",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hallstattwalk.com/ru/hallstatt-self-guided-walking-tour/"
+   },
+   "image": "https://hallstattwalk.com/img/tile-classic.webp",
+   "author": {
+    "@type": "Organization",
+    "name": "TouringBee"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "TouringBee",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://hallstattwalk.com/img/logo.webp"
+    }
+   },
+   "datePublished": "2026-11-05",
+   "dateModified": "2026-11-05"
+  },
+  {
+   "@type": "Product",
+   "name": "Hallstatt Town Tour — аудиогид",
+   "description": "Как пройти Гальштат без экскурсии и понимать, что видите: маршрут по деревне, 17 аудиоостановок, офлайн-карта, 9,99 €. Начать можно с любой точки.",
+   "brand": {
+    "@type": "Brand",
+    "name": "TouringBee"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "9.99",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://hallstattwalk.com/ru/hallstatt-self-guided-walking-tour/"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Путеводитель по Гальштату",
+     "item": "https://hallstattwalk.com/ru/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Все путеводители",
+     "item": "https://hallstattwalk.com/ru/guides/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Гальштат самостоятельно: прогулка с аудиогидом, 17 остановок, офлайн"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Можно ли посмотреть Гальштат самостоятельно, без экскурсии?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Да. Улицы, рыночная площадь, оба церковных двора, горное кладбище и северная фототочка бесплатны и открыты всегда. Платные места здесь только три: костница, музей и соляная шахта. Вопрос не в том, пустят ли вас, а в том, откуда брать объяснения тому, что вы видите, — именно это и закрывает аудиогид."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Сколько остановок на маршруте и сколько он длится?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "17 аудиоостановок. Запланируйте около двух часов на неспешную прогулку с фотографиями и остановками; если идти совсем без задержек, выйдет заметно быстрее. От автовокзала в Лане до северной фототочки по этому маршруту — около километра."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Нужен ли интернет во время прогулки?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Нет. Маршрут, карта и аудио скачиваются заранее по Wi-Fi, и дальше телефон работает уже без сети. Это удобно ещё и потому, что связь в долине бывает довольно неровной."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Истории включаются сами, когда подходишь к месту?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Нет, и это сделано намеренно. На карте видно, где вы находитесь и где следующая остановка; историю вы запускаете сами, когда дошли до места и готовы слушать. Ничего не начнётся посреди разговора, и ничего не включится не вовремя из-за того, что вы просто свернули с маршрута в соседний переулок."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Входит ли в аудиогид билет в костницу?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Нет. Входные билеты в него никогда не входят: костница 2 €, музей 12 €, шахта 49 € или 33 €. Аудиогид рассказывает и у входа, и внутри, но сам проход вы оплачиваете на месте."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Я приезжаю поездом — где начинать?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Паром от вокзала швартуется в самом центре деревни, у причала Hallstatt Markt, в минуте ходьбы от рыночной площади. Это как раз середина маршрута. Начните с ближайшей к вам остановки, пройдите северную половину до самой фототочки, а потом спуститесь вдоль воды на юг."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "На каких языках звучит аудиогид?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Английский, немецкий, испанский, итальянский и русский. Язык вы выбираете в приложении в момент запуска тура."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Подойдёт ли детям?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Маршрут короткий, а истории — это совсем не лекция: рассказ про черепа с нарисованными венками и рассказ про то, что носили вниз с горы, дети слушают даже охотнее, чем взрослые. Коляска спокойно пройдёт по набережной и по площади, но наверх, к кладбищу и к костнице, ведут лестницы."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap bar">
+    <a class="brand" href="/ru/"><img src="../../img/logo.webp" alt="HallstattWalk" width="38" height="38"><span>Hallstatt<i>Walk</i></span></a>
+    <nav class="nav">
+      <details class="menu">
+        <summary>Путеводители &#9662;</summary>
+        <ul>
+          
+          <li><a href="/ru/hallstatt-self-guided-walking-tour/">Аудиогид</a></li><li><a href="/ru/best-time-to-visit-hallstatt/">Когда ехать</a></li>
+          <li><a href="/ru/what-to-see-in-hallstatt/">Что посмотреть</a></li>
+          <li><a href="/ru/hallstatt-from-salzburg/">Из Зальцбурга в Гальштат</a></li>
+          <li><a href="/ru/hallstatt-from-vienna/">Из Вены в Гальштат</a></li>
+          <li><a href="/ru/hallstatt-christmas-market/">Рождественский рынок</a></li>
+          <li><a href="/ru/hallstatt-salt-mine/">Соляная шахта</a></li>
+          <li><a href="/ru/guides/#hallstatt-ferry">Поезд и паром <span class="pill">скоро</span></a></li>
+          <li><a href="/ru/guides/#hallstatt-bone-house">Костница <span class="pill">скоро</span></a></li>
+          <li><a class="all" href="/ru/guides/">Все путеводители &rarr;</a></li>
+        </ul>
+      </details>
+      <a class="btn sm cta bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="header">Аудиогид 9,99&nbsp;&euro;</a>
+      <nav class="lang"><a href="/hallstatt-self-guided-walking-tour/">EN</a><a href="/fr/hallstatt-self-guided-walking-tour/">FR</a><a href="/de/hallstatt-self-guided-walking-tour/">DE</a><a href="/es/hallstatt-self-guided-walking-tour/">ES</a><a href="/it/hallstatt-self-guided-walking-tour/">IT</a><a href="/pt/hallstatt-self-guided-walking-tour/">PT</a><a href="/pl/hallstatt-self-guided-walking-tour/">PL</a><a class="on" href="/ru/hallstatt-self-guided-walking-tour/">RU</a></nav>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap article">
+<p class="small"><a href="/ru/">Путеводитель по Гальштату</a> &rarr; <a href="/ru/guides/">Все путеводители</a></p>
+<div class="hero-sg"><h1>Гальштат самостоятельно: прогулка с аудиогидом TouringBee</h1><p class="lede">Без группы и без расписания: по деревне от южного конца до северной смотровой, 17 остановок.</p><ul class="chips"><li>★ 4,7</li><li>~2 часа</li><li>17 остановок</li><li>офлайн</li><li>9,99 €</li></ul><p class="cta-row"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="hero">Купить аудиогид — 9,99 €</a><a class="btn ghost" href="#how">Как это работает</a></p><p class="small">Автор: Eugene · Обновлено 5 ноября 2026</p></div>
+
+
+<figure class="fig"><img src="../../img/tile-classic.webp" alt="Гальштат с воды: деревянные дома между озером и скалами Дахштайна" width="800" height="600" fetchpriority="high"></figure>
+<h2>Коротко: нужна ли здесь экскурсия</h2>
+
+<p>Гальштат — деревня, которую можно пересечь пешком за пятнадцать минут, и заблудиться в ней попросту негде. Улицы, рыночная площадь, оба церковных двора, горное кладбище и северная фототочка бесплатны и открыты всегда; единственное, за что здесь нужно платить при входе, — это костница (2 €), музей (12 €) и соляная шахта. Экскурсовод, который будет вести вас за руку, здесь правда не обязателен.</p>
+
+<p>Настоящий вопрос в другом — откуда вы возьмёте контекст. Можно читать таблички, можно идти с бумажным путеводителем в руке, можно прочитать про деревню заранее, ещё до поездки. <a class="bokunButton tb-inline" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="inline_prose">Аудиогид TouringBee</a> делает ту же самую работу, только не заставляет вас всё время смотреть в экран: вы подходите к месту, включаете остановку и слушаете, а глаза при этом остаются на деревне. Семнадцать остановок — почему дома стоят здесь друг у друга на головах, что женщины носили вниз с горы дважды в день и что случилось здесь в 1846 году, из-за чего целую эпоху европейской предыстории назвали гальштатской.</p>
+
+<div class="tb-banner"><div><h3>Собираетесь гулять по Гальштату сами?</h3><p>Аудиогид TouringBee ведёт вас по деревне: 17 остановок от южного конца, через рыночную площадь и костницу, к северной смотровой. В телефоне и офлайн, в своём темпе, начиная с любой точки.</p><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="banner1">Аудиогид по Гальштату — 9,99 €</a></div></div>
+
+<h2>Почему с аудиогидом интереснее</h2>
+
+<p><b>Понимаете, что видите.</b> Дома, лестницы, череп с нарисованным венком — у каждого из них есть своё объяснение, и ни одно из них не написано на табличке рядом.</p>
+
+<p><b>Идёте в своём темпе.</b> Остановились на кофе, вернулись к той же точке, переслушали ещё раз. Никого не ждёте, и никто не ждёт вас.</p>
+
+<p><b>Связь не нужна.</b> Маршрут, карта и аудио скачиваются на телефон заранее, а дальше он работает сам по себе, без всякого соединения. Про роуминг в долине можно больше не думать.</p>
+
+<h2>Послушайте начало прогулки</h2>
+
+<audio class="sgaudio" controls preload="none" src="../../audio/hallstatt-intro-en.mp3"></audio><p class="small">вступление, около минуты. Запись на английском — это образец звучания; сам тур идёт и на русском.</p>
+
+<h2>Одна история целиком: почему черепа расписаны</h2>
+
+<p>В часовне Святого Михаила, под католической церковью, стоят полки с человеческими черепами. По данным туристической службы Гальштата, расписанных среди них <b>больше шестисот</b>, а обследование, проведённое в 1948–1950 годах, насчитало в часовне <b>2 104 черепа</b> — расписанные и нерасписанные вместе. Для деревни, в церковных книгах которой до 1900 года записано около тридцати тысяч смертей, это крошечная доля, и отсюда сразу возникает очевидный вопрос: почему именно эти.</p>
+
+<p>Очевидный ответ состоит в том, что на кладбище между горой и озером не хватало места, поэтому могилы переиспользовали, а кости переносили. Туристическая служба приводит это объяснение осторожно: как ту версию, которой держались до исследования, проведённого между 1974 и 1993 годами, — и при этом сама её не подтверждает и не отвергает. Надёжно известно другое: перенос был вторыми похоронами, а не утилизацией. Чтобы человек не растворился в общей куче, на лобной кости писали его имя или инициалы, а вокруг них рисовали венок.</p>
+
+<p>И вот та деталь, ради которой стоит задержаться у полок. Возраст черепа можно прочитать по его венку: чем темнее венок, тем старше череп. Самые ранние из них — густые и тёмные. Потом на лбу появляются цветы, а потом зелёные листья на висках — дуб, плющ, олеандр. Чёрный крест на лбу есть почти всегда. Самые поздние росписи, начала XIX века, узнаются здесь с первого взгляда: тонкие ветки плюща по бокам, латиница вместо готики, более узкий крест. Вы можете встать перед полкой и разложить её по времени сами, не читая при этом ни одной подписи.</p>
+
+<p>Таких историй, как эта, на маршруте семнадцать.</p>
+
+<p style="text-align:center;margin:1.4em 0"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="after_story">Услышать остальные истории — 9,99 €</a></p>
+
+<h2>Маршрут: 7 этапов, 17 остановок</h2>
+
+<p>Ниже — 7 основных этапов прогулки. В приложении этот же маршрут разбит на 17 остановок, у каждой из которых есть аудиоистория и иллюстрации.</p>
+
+<div class="stages"><ol><li>Южный конец деревни, район Лан</li><li>Набережная вдоль озера</li><li>Рыночная площадь</li><li>Евангелическая церковь</li><li>Крытые лестницы и верхние переулки</li><li>Католическая церковь, горное кладбище и костница</li><li>Северная фототочка на Gosaumühlstraße</li></ol></div>
+
+<p><b>1. Южный конец деревни, район Лан.</b> Сюда приходят автобусы 542 и 543, и здесь же находятся парковки и нижняя станция фуникулёра на соляную гору.</p>
+
+<p><b>2. Набережная вдоль озера.</b> Лодочные сараи у самой воды, лебеди и первый вид на деревню целиком — снизу.</p>
+
+<p><b>3. Рыночная площадь.</b> Крашеные фасады вокруг колонны Святой Троицы — единственное ровное место в Гальштате.</p>
+
+<p><b>4. Евангелическая церковь.</b> Тот самый шпиль у воды, который попадает в каждую фотографию деревни.</p>
+
+<p><b>5. Крытые лестницы и верхние переулки.</b> Подъём от площади к церкви — это единственный заметный набор высоты на всём маршруте, метров тридцать. Именно здесь становится видно, почему дома стоят уступами друг над другом: между скалой и берегом озера ширины просто нет.</p>
+
+<p><b>6. Католическая церковь, горное кладбище и костница.</b> Кладбище бесплатное и почти всегда пустое; вход в костницу стоит 2 €.</p>
+
+<p><b>7. Северная фототочка на Gosaumühlstraße.</b> Тот открыточный ракурс, по которому Гальштат узнают во всём мире.</p>
+
+<p><i>От автовокзала в Лане до северной фототочки этим путём — около километра. Если стартовать от нижней станции фуникулёра на соляную гору, добавьте к этому ещё метров двести пятьдесят. Для сравнения: у туристической службы есть размеченный круговой маршрут «Ortsrundgang Hallstatt» — он проходит те же самые места и возвращается к точке старта. Заявлен он как 2,7 км, 72 метра подъёма и около 50 минут чистого хода.</i></p>
+
+<p><i>Маршрут не охватывает все улицы деревни — это его главная линия. Свернуть с неё и вернуться обратно на неё можно в любой момент: порядок остановок — это рекомендация, а не обязательство.</i></p>
+
+<div class="box"><p>Между причалом в Лане и северной фототочкой живут 237 человек. В пиковый день, по расчёту самой общины в плане управления объектом всемирного наследия, на каждого из них приходится почти сорок приезжих.</p></div>
+
+<h2>Если вы приехали поездом</h2>
+
+<p>Вокзал Гальштата стоит на другом берегу озера, и от него к деревне ходит паром — семь минут, 4 € в одну сторону, только наличными. Швартуется он <b>в центре, у причала Hallstatt Markt</b>, примерно в минуте ходьбы от рыночной площади. То есть вы попадаете не в начало маршрута, а сразу в его середину.</p>
+
+<p>Это не проблема: начинать можно с любой точки. Логичнее всего пройти сначала северную половину — площадь, обе церкви, костницу и фототочку, — а потом спуститься вдоль воды на юг, к набережной и к Лану. Обратно к парому — те же несколько сотен метров.</p>
+
+<p>Паром ходит круглый год и подстроен под расписание поездов; оператор отдельно оговаривает, что при опоздании поезда время отправления может сдвинуться. <a href="https://hallstattschifffahrt.at/en/#fahrplan" target="_blank" rel="noopener">Актуальное расписание и цены — на сайте Hallstättersee Schifffahrt</a> (страница на английском); проверьте время последнего рейса до того, как выйдете, — оно зависит и от даты, и от железнодорожного графика.</p>
+
+<h2>Самому, с аудиогидом или с живым гидом</h2>
+
+<div class="cmp"><div><p><b>Самостоятельно — 0 €.</b> В любое время и сколько угодно долго. Улицы, площадь, кладбище и фототочка бесплатны. Контекст придётся добывать самому: по табличкам, по бумажному путеводителю в руке или по тому, что вы прочитали про деревню заранее.</p></div><div><p><b>С аудиогидом TouringBee — 9,99 € на человека.</b> Один платёж, доступ на год. 17 остановок, офлайн-карта, иллюстрации. Начинаете через минуту после приезда, в любой день и в любой час, и прерываетесь столько раз, сколько захотите. Каждый в компании слушает в своём собственном телефоне.</p></div><div><p><b>С живым гидом — от 5 € на человека.</b> Туристическая служба проводит экскурсию «Welterberundgang» по историческому центру: 1,5 часа, на немецком, английском и итальянском языках, билеты продаются в офисе на Зеештрассе (цена и состав — по странице службы, проверено 5 ноября 2026). Экскурсии идут по расписанию, которое нужно уточнять заранее. Частная прогулка с гидом стоит от 168 € за группу.</p></div></div>
+
+<p><i>Главное отличие здесь не в цене, а в том, когда именно вы идёте. В Гальштат часто приезжают всего на несколько часов между поездами или автобусами — и подстроиться под чужое расписание в таком окне получается не всегда. Аудиогид начинается тогда, когда вы сошли с парома.</i></p>
+
+<p><i>В любом варианте входные билеты оплачиваются отдельно: костница 2 €, музей всемирного наследия 12 €, соляная шахта 49 € с фуникулёром или 33 € без него.</i></p>
+
+<h2 id="how">Как это работает</h2>
+
+<p><b>1. Покупаете.</b> Один платёж — 9,99 €. Письмо с активацией приходит в течение нескольких минут.</p>
+
+<p><b>2. Ставите приложение.</b> TouringBee для iPhone и Android; язык выбирается внутри приложения.</p>
+
+<p><b>3. Скачиваете тур заранее.</b> По Wi-Fi в отеле или в поезде — после этого интернет вам уже не нужен.</p>
+
+<p><b>4. Идёте и слушаете.</b> На карте видно, где вы находитесь и где следующая остановка. Когда дошли до неё, открываете остановку и включаете воспроизведение. Ничего не запускается само: история не начнётся посреди разговора и не включится не вовремя из-за того, что вы свернули в переулок. Пауза, повтор и возврат к любой остановке — сколько угодно раз и в течение всего года.</p>
+
+<p><i>Совет: зарядите телефон хотя бы до 80 % и возьмите наушники — у воды и на площади бывает людно.</i></p>
+
+
+
+<h2>Почему этому гиду можно доверять</h2>
+
+<p><b>4,7 в App Store</b> — на 5 ноября 2026 года, по 85 оценкам на американской витрине. <b>Тексты написаны историками</b>, а озвучка профессиональная. <b>Один платёж, доступ на год</b>, без подписки и без доплат внутри маршрута.</p>
+
+<p>Отзывов именно на гальштатский маршрут пока нет — он продаётся только у нас, и отзывы на нём не копятся. Ниже — отзывы на само приложение TouringBee и на другие наши маршруты, приведённые дословно и с указанием магазина, из которого они взяты. Про Гальштат в них не сказано ничего; это оценка того, как устроен сам формат.</p>
+
+<p><i>"Perfect for a an overview for a first time visitor"</i> — EGP1997, App Store (витрина Великобритании), февраль 2026, 5★, о маршруте по Вене.</p>
+
+<p><i>"Very informative. Great way to walk around the city."</i> — David Brisbane, App Store (витрина Австралии), май 2025, 5★, о маршруте по Вене.</p>
+
+<p><i>"Great stories and history with integrated map and pictures. Exactly what I wanted. Exploring at my own pace."</i> — Dino in Colorado, App Store (витрина США), май 2026, 5★.</p>
+
+<p><i>"Great for exploring at your own speed - and you can repeat if you need!"</i> — Flick the switch, App Store (витрина Великобритании), июнь 2025, 5★.</p>
+
+
+
+<div class="box"><p><b>Hallstatt Town Tour — аудиогид</b></p><p>9,99 € · один платёж · доступ на год · на человека</p><ul><li>17 остановок по деревне, от южного конца до северной смотровой</li><li>Офлайн-карта — роуминг не нужен</li><li>Тексты написаны историками, с иллюстрациями</li><li>Английский, немецкий, испанский, итальянский и русский</li></ul><p style="margin-top:.9em"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="product_card">Купить аудиогид — 9,99 €</a></p></div>
+
+<h2>Полезно знать перед прогулкой</h2>
+
+<p><b>Откуда начинать.</b> Маршрут выстроен с юга на север, но начать можно с любой точки. Приехали автобусом или на машине — стартуйте от Лана и идите вдоль воды. Приехали поездом — вы сходите в самом центре, у причала Markt, и тогда удобнее сначала подняться к церквям, а набережную оставить на обратный путь.</p>
+
+<p><b>Обувь и рельеф.</b> Главная линия идёт вдоль воды и почти совсем ровная. Единственный подъём на ней — это крытые лестницы от площади к католической церкви и костнице, метров тридцать по высоте. Каблуки лучше оставить в отеле.</p>
+
+<p><b>Когда идти.</b> До половины десятого утра и после половины пятого вечера деревня принадлежит тем, кто в ней ночует. Это самые лучшие часы для того, чтобы слушать, и фотографии в это время выходят без чужих затылков в кадре.</p>
+
+<p><b>Билеты не входят.</b> Костница 2 €, музей всемирного наследия 12 €, соляная шахта 49 € с фуникулёром. <a href="https://www.getyourguide.com/hallstatt-l32535/?partner_id=0M4BUCG&amp;utm_medium=travel_agent" target="_blank" rel="noopener sponsored">Билеты и экскурсии в Гальштате</a> можно взять заранее.</p>
+
+<h2>Частые вопросы</h2>
+
+<p><b>Можно ли посмотреть Гальштат самостоятельно, без экскурсии?</b><br>
+Да. Улицы, рыночная площадь, оба церковных двора, горное кладбище и северная фототочка бесплатны и открыты всегда. Платные места здесь только три: костница, музей и соляная шахта. Вопрос не в том, пустят ли вас, а в том, откуда брать объяснения тому, что вы видите, — именно это и закрывает аудиогид.</p>
+
+<p><b>Сколько остановок на маршруте и сколько он длится?</b><br>
+17 аудиоостановок. Запланируйте около двух часов на неспешную прогулку с фотографиями и остановками; если идти совсем без задержек, выйдет заметно быстрее. От автовокзала в Лане до северной фототочки по этому маршруту — около километра.</p>
+
+<p><b>Нужен ли интернет во время прогулки?</b><br>
+Нет. Маршрут, карта и аудио скачиваются заранее по Wi-Fi, и дальше телефон работает уже без сети. Это удобно ещё и потому, что связь в долине бывает довольно неровной.</p>
+
+<p><b>Истории включаются сами, когда подходишь к месту?</b><br>
+Нет, и это сделано намеренно. На карте видно, где вы находитесь и где следующая остановка; историю вы запускаете сами, когда дошли до места и готовы слушать. Ничего не начнётся посреди разговора, и ничего не включится не вовремя из-за того, что вы просто свернули с маршрута в соседний переулок.</p>
+
+<p><b>Входит ли в аудиогид билет в костницу?</b><br>
+Нет. Входные билеты в него никогда не входят: костница 2 €, музей 12 €, шахта 49 € или 33 €. Аудиогид рассказывает и у входа, и внутри, но сам проход вы оплачиваете на месте.</p>
+
+<p><b>Я приезжаю поездом — где начинать?</b><br>
+Паром от вокзала швартуется в самом центре деревни, у причала Hallstatt Markt, в минуте ходьбы от рыночной площади. Это как раз середина маршрута. Начните с ближайшей к вам остановки, пройдите северную половину до самой фототочки, а потом спуститесь вдоль воды на юг.</p>
+
+<p><b>На каких языках звучит аудиогид?</b><br>
+Английский, немецкий, испанский, итальянский и русский. Язык вы выбираете в приложении в момент запуска тура.</p>
+
+<p><b>Подойдёт ли детям?</b><br>
+Маршрут короткий, а истории — это совсем не лекция: рассказ про черепа с нарисованными венками и рассказ про то, что носили вниз с горы, дети слушают даже охотнее, чем взрослые. Коляска спокойно пройдёт по набережной и по площади, но наверх, к кладбищу и к костнице, ведут лестницы.</p>
+
+<h2>Читать дальше</h2>
+
+<ul class="readnext"><li><a href="/ru/what-to-see-in-hallstatt/">Что посмотреть в Гальштате</a></li><li><a href="/ru/best-time-to-visit-hallstatt/">Когда ехать</a></li><li><a href="/ru/hallstatt-salt-mine/">Соляная шахта</a></li><li><a href="/ru/hallstatt-from-salzburg/">Как добраться из Зальцбурга</a></li></ul>
+
+<h2>Итог</h2>
+
+<p>Гальштат можно пройти без гида за час, и тогда он запомнится как картинка. С аудиогидом та же самая прогулка занимает около двух часов и запоминается как место, у которого семь тысяч лет истории и очень мало ровной земли. Разница — 9,99 € один раз и доступ на год.</p>
+
+<p style="text-align:center;margin:1.8em 0"><a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="final_cta">Пройти Гальштат с аудиогидом →</a></p>
+
+
+
+<p><i>Цены на входные билеты, расписание парома и условия экскурсии туристической службы проверены 5 ноября 2026 года по страницам Hallstättersee Schifffahrt, Salzwelten, Музея всемирного наследия и dachstein.salzkammergut.at. Расписание парома действует до 13 декабря 2026 года. Часть ссылок — партнёрские: если вы бронируете по ним, мы можем получить небольшую комиссию без доплаты с вашей стороны.</i></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/ru/" style="color:#fff"><img src="../../img/logo.webp" alt="" width="38" height="38" loading="lazy"><span>Hallstatt<i style="color:#7FB6F2">Walk</i></span></a>
+        <p style="margin-top:12px;font-size:14.5px">Независимый путеводитель по Гальштату и Зальцкаммергуту от команды аудиогидов TouringBee.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="/ru/">Полный путеводитель по Гальштату</a></li>
+          <li><a href="/ru/guides/">Все путеводители</a></li>
+          <li><a class="bokunButton tb-inline" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="footer">Аудиогид по Гальштату</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Документы</h4>
+        <ul>
+          <li><a href="/privacy/">Политика конфиденциальности</a></li>
+          <li><a href="/affiliate-disclosure/">О партнёрских ссылках</a></li>
+          <li><a href="https://touringbee.com/terms-and-conditions/" target="_blank" rel="noopener">Условия TouringBee</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Языки</h4>
+        <ul>
+          <li><a href="/">English</a> &middot; <a href="/fr/">Fran&ccedil;ais</a></li>
+          <li><a href="/de/">Deutsch</a> &middot; <a href="/es/">Espa&ntilde;ol</a></li>
+          <li><a href="/it/">Italiano</a> &middot; <a href="/pt/">Portugu&ecirc;s</a></li>
+          <li><a href="/pl/">Polski</a> &middot; <a href="/ru/">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">&copy; 2026 HallstattWalk — проект TouringBee. Гальштат-Дахштайн / Зальцкаммергут — культурный ландшафт из списка Всемирного наследия ЮНЕСКО. Помните: деревня остаётся чьим-то домом.</div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="wrap in">
+    <div class="t"><b>Прогулка по Гальштату — 17 точек, офлайн</b>Аудиомаршрут без гида &middot; 9,99&nbsp;&euro;</div>
+    <a class="btn bokunButton" href="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru" data-src="https://widgets.bokun.io/online-sales/9c09e243-b0be-4711-9c08-7fbbbafcd4e7/experience/1258625?lang=ru&amp;partialView=1" data-cta="sticky">Купить аудиогид</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var s=document.getElementById('sticky');
+  function t(){ (window.scrollY>900) ? s.classList.add('on') : s.classList.remove('on'); }
+  addEventListener('scroll',t,{passive:true}); t();
+})();
+</script>
+
+<!-- Bokun booking engine: loaded only after the first real user interaction, so
+     synthetic audits (Lighthouse/PSI) never pay for it. -->
+<script>
+(function(){
+  var SRC = 'https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=9c09e243-b0be-4711-9c08-7fbbbafcd4e7';
+  var EV  = ['mouseover','touchstart','pointerdown','scroll','keydown'];
+  var OPT = {passive:true, capture:true};
+  var started = false, ready = false;
+
+  function load(){
+    if (started) return; started = true;
+    EV.forEach(function(e){ window.removeEventListener(e, load, OPT); });
+    var s = document.createElement('script');
+    s.async = true; s.src = SRC;
+    s.onload = function(){ setTimeout(function(){ ready = true; }, 60); };
+    document.head.appendChild(s);
+  }
+  EV.forEach(function(e){ window.addEventListener(e, load, OPT); });
+
+  /* If someone clicks before the engine finished loading, hold the click,
+     then replay it once Bokun is ready. Falls back to the anchor's own href. */
+  document.addEventListener('click', function(ev){
+    if (ready) return;
+    var a = ev.target && ev.target.closest ? ev.target.closest('a.bokunButton') : null;
+    if (!a) return;
+    ev.preventDefault();
+    load();
+    var t0 = Date.now();
+    (function wait(){
+      if (ready) { a.click(); return; }
+      if (Date.now() - t0 > 5000) { ready = true; a.click(); return; }
+      setTimeout(wait, 80);
+    })();
+  }, true);
+})();
+</script>
+</body>
+</html>
